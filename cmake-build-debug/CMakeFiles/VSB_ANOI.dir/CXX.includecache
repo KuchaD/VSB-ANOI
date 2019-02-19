@@ -6,11 +6,21 @@
 
 #IncludeRegexTransform: 
 
+/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/Indexing.h
+Indexing.h
+/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/Indexing.h
+
+/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/Threshold.h
+
 /home/davelinux/Dokumenty/GIT/VSB-ANOI/main.cpp
 iostream
 -
 opencv2/opencv.hpp
 /home/davelinux/Dokumenty/GIT/VSB-ANOI/opencv2/opencv.hpp
+Imaging/Threshold.h
+/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/Threshold.h
+Imaging/Indexing.h
+/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/Indexing.h
 
 /usr/local/include/opencv4/opencv2/calib3d.hpp
 opencv2/core.hpp

@@ -86,6 +86,24 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/Indexing.cpp">
+			<Option target="VSB_ANOI"/>
+		</Unit>
+		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/Indexing.h">
+			<Option target="VSB_ANOI"/>
+		</Unit>
+		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/Threshold.cpp">
+			<Option target="VSB_ANOI"/>
+		</Unit>
+		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/Threshold.h">
+			<Option target="VSB_ANOI"/>
+		</Unit>
+		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Utils/Utils.cpp">
+			<Option target="VSB_ANOI"/>
+		</Unit>
+		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Utils/Utils.h">
+			<Option target="VSB_ANOI"/>
+		</Unit>
 		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/main.cpp">
 			<Option target="VSB_ANOI"/>
 		</Unit>

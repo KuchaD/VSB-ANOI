@@ -123,6 +123,87 @@ VSB_ANOI/fast:
 	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/build
 .PHONY : VSB_ANOI/fast
 
+Imaging/Indexing.o: Imaging/Indexing.cpp.o
+
+.PHONY : Imaging/Indexing.o
+
+# target to build an object file
+Imaging/Indexing.cpp.o:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Imaging/Indexing.cpp.o
+.PHONY : Imaging/Indexing.cpp.o
+
+Imaging/Indexing.i: Imaging/Indexing.cpp.i
+
+.PHONY : Imaging/Indexing.i
+
+# target to preprocess a source file
+Imaging/Indexing.cpp.i:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Imaging/Indexing.cpp.i
+.PHONY : Imaging/Indexing.cpp.i
+
+Imaging/Indexing.s: Imaging/Indexing.cpp.s
+
+.PHONY : Imaging/Indexing.s
+
+# target to generate assembly for a file
+Imaging/Indexing.cpp.s:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Imaging/Indexing.cpp.s
+.PHONY : Imaging/Indexing.cpp.s
+
+Imaging/Threshold.o: Imaging/Threshold.cpp.o
+
+.PHONY : Imaging/Threshold.o
+
+# target to build an object file
+Imaging/Threshold.cpp.o:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Imaging/Threshold.cpp.o
+.PHONY : Imaging/Threshold.cpp.o
+
+Imaging/Threshold.i: Imaging/Threshold.cpp.i
+
+.PHONY : Imaging/Threshold.i
+
+# target to preprocess a source file
+Imaging/Threshold.cpp.i:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Imaging/Threshold.cpp.i
+.PHONY : Imaging/Threshold.cpp.i
+
+Imaging/Threshold.s: Imaging/Threshold.cpp.s
+
+.PHONY : Imaging/Threshold.s
+
+# target to generate assembly for a file
+Imaging/Threshold.cpp.s:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Imaging/Threshold.cpp.s
+.PHONY : Imaging/Threshold.cpp.s
+
+Utils/Utils.o: Utils/Utils.cpp.o
+
+.PHONY : Utils/Utils.o
+
+# target to build an object file
+Utils/Utils.cpp.o:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Utils/Utils.cpp.o
+.PHONY : Utils/Utils.cpp.o
+
+Utils/Utils.i: Utils/Utils.cpp.i
+
+.PHONY : Utils/Utils.i
+
+# target to preprocess a source file
+Utils/Utils.cpp.i:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Utils/Utils.cpp.i
+.PHONY : Utils/Utils.cpp.i
+
+Utils/Utils.s: Utils/Utils.cpp.s
+
+.PHONY : Utils/Utils.s
+
+# target to generate assembly for a file
+Utils/Utils.cpp.s:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Utils/Utils.cpp.s
+.PHONY : Utils/Utils.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +240,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... VSB_ANOI"
 	@echo "... edit_cache"
+	@echo "... Imaging/Indexing.o"
+	@echo "... Imaging/Indexing.i"
+	@echo "... Imaging/Indexing.s"
+	@echo "... Imaging/Threshold.o"
+	@echo "... Imaging/Threshold.i"
+	@echo "... Imaging/Threshold.s"
+	@echo "... Utils/Utils.o"
+	@echo "... Utils/Utils.i"
+	@echo "... Utils/Utils.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

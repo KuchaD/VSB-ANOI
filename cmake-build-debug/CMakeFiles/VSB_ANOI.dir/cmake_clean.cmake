@@ -1,5 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/VSB_ANOI.dir/main.cpp.o"
+  "CMakeFiles/VSB_ANOI.dir/Utils/Utils.cpp.o"
+  "CMakeFiles/VSB_ANOI.dir/Imaging/Threshold.cpp.o"
+  "CMakeFiles/VSB_ANOI.dir/Imaging/Indexing.cpp.o"
   "VSB_ANOI.pdb"
   "VSB_ANOI"
 )
