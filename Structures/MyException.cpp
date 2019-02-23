@@ -3,3 +3,7 @@
 //
 
 #include "MyException.h"
+
+MyException::MyException(std::string Message) {
+    this->Message = Message;
+}

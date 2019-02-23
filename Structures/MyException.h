@@ -6,8 +6,16 @@
 #define VSB_ANOI_MYEXCEPTION_H
 
 
-class MyException {
-
+#include <exception>
+#include "iostream"
+class MyException : public std::exception {
+private:
+    std::string Message;
+public:
+    MyException(std::string Message);
+    const std::string what (){
+        return Message;
+    }
 };
 
 

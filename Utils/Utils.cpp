@@ -3,6 +3,10 @@
 //
 
 #include "Utils.h"
+#include <math.h>
+#include <opencv2/core/mat.hpp>
+#include "../Structures/ImgObject.h"
+
 Utils::Utils()
 {
 }

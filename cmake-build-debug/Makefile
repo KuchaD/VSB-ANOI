@@ -123,32 +123,32 @@ VSB_ANOI/fast:
 	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/build
 .PHONY : VSB_ANOI/fast
 
-Imaging/Indexing.o: Imaging/Indexing.cpp.o
+Imaging/BlobDetector.o: Imaging/BlobDetector.cpp.o
 
-.PHONY : Imaging/Indexing.o
+.PHONY : Imaging/BlobDetector.o
 
 # target to build an object file
-Imaging/Indexing.cpp.o:
-	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Imaging/Indexing.cpp.o
-.PHONY : Imaging/Indexing.cpp.o
+Imaging/BlobDetector.cpp.o:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Imaging/BlobDetector.cpp.o
+.PHONY : Imaging/BlobDetector.cpp.o
 
-Imaging/Indexing.i: Imaging/Indexing.cpp.i
+Imaging/BlobDetector.i: Imaging/BlobDetector.cpp.i
 
-.PHONY : Imaging/Indexing.i
+.PHONY : Imaging/BlobDetector.i
 
 # target to preprocess a source file
-Imaging/Indexing.cpp.i:
-	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Imaging/Indexing.cpp.i
-.PHONY : Imaging/Indexing.cpp.i
+Imaging/BlobDetector.cpp.i:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Imaging/BlobDetector.cpp.i
+.PHONY : Imaging/BlobDetector.cpp.i
 
-Imaging/Indexing.s: Imaging/Indexing.cpp.s
+Imaging/BlobDetector.s: Imaging/BlobDetector.cpp.s
 
-.PHONY : Imaging/Indexing.s
+.PHONY : Imaging/BlobDetector.s
 
 # target to generate assembly for a file
-Imaging/Indexing.cpp.s:
-	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Imaging/Indexing.cpp.s
-.PHONY : Imaging/Indexing.cpp.s
+Imaging/BlobDetector.cpp.s:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Imaging/BlobDetector.cpp.s
+.PHONY : Imaging/BlobDetector.cpp.s
 
 Imaging/Threshold.o: Imaging/Threshold.cpp.o
 
@@ -176,6 +176,87 @@ Imaging/Threshold.s: Imaging/Threshold.cpp.s
 Imaging/Threshold.cpp.s:
 	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Imaging/Threshold.cpp.s
 .PHONY : Imaging/Threshold.cpp.s
+
+Structures/ImgObject.o: Structures/ImgObject.cpp.o
+
+.PHONY : Structures/ImgObject.o
+
+# target to build an object file
+Structures/ImgObject.cpp.o:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Structures/ImgObject.cpp.o
+.PHONY : Structures/ImgObject.cpp.o
+
+Structures/ImgObject.i: Structures/ImgObject.cpp.i
+
+.PHONY : Structures/ImgObject.i
+
+# target to preprocess a source file
+Structures/ImgObject.cpp.i:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Structures/ImgObject.cpp.i
+.PHONY : Structures/ImgObject.cpp.i
+
+Structures/ImgObject.s: Structures/ImgObject.cpp.s
+
+.PHONY : Structures/ImgObject.s
+
+# target to generate assembly for a file
+Structures/ImgObject.cpp.s:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Structures/ImgObject.cpp.s
+.PHONY : Structures/ImgObject.cpp.s
+
+Structures/MyException.o: Structures/MyException.cpp.o
+
+.PHONY : Structures/MyException.o
+
+# target to build an object file
+Structures/MyException.cpp.o:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Structures/MyException.cpp.o
+.PHONY : Structures/MyException.cpp.o
+
+Structures/MyException.i: Structures/MyException.cpp.i
+
+.PHONY : Structures/MyException.i
+
+# target to preprocess a source file
+Structures/MyException.cpp.i:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Structures/MyException.cpp.i
+.PHONY : Structures/MyException.cpp.i
+
+Structures/MyException.s: Structures/MyException.cpp.s
+
+.PHONY : Structures/MyException.s
+
+# target to generate assembly for a file
+Structures/MyException.cpp.s:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Structures/MyException.cpp.s
+.PHONY : Structures/MyException.cpp.s
+
+Structures/Point.o: Structures/Point.cpp.o
+
+.PHONY : Structures/Point.o
+
+# target to build an object file
+Structures/Point.cpp.o:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Structures/Point.cpp.o
+.PHONY : Structures/Point.cpp.o
+
+Structures/Point.i: Structures/Point.cpp.i
+
+.PHONY : Structures/Point.i
+
+# target to preprocess a source file
+Structures/Point.cpp.i:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Structures/Point.cpp.i
+.PHONY : Structures/Point.cpp.i
+
+Structures/Point.s: Structures/Point.cpp.s
+
+.PHONY : Structures/Point.s
+
+# target to generate assembly for a file
+Structures/Point.cpp.s:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Structures/Point.cpp.s
+.PHONY : Structures/Point.cpp.s
 
 Utils/Utils.o: Utils/Utils.cpp.o
 
@@ -240,12 +321,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... VSB_ANOI"
 	@echo "... edit_cache"
-	@echo "... Imaging/Indexing.o"
-	@echo "... Imaging/Indexing.i"
-	@echo "... Imaging/Indexing.s"
+	@echo "... Imaging/BlobDetector.o"
+	@echo "... Imaging/BlobDetector.i"
+	@echo "... Imaging/BlobDetector.s"
 	@echo "... Imaging/Threshold.o"
 	@echo "... Imaging/Threshold.i"
 	@echo "... Imaging/Threshold.s"
+	@echo "... Structures/ImgObject.o"
+	@echo "... Structures/ImgObject.i"
+	@echo "... Structures/ImgObject.s"
+	@echo "... Structures/MyException.o"
+	@echo "... Structures/MyException.i"
+	@echo "... Structures/MyException.s"
+	@echo "... Structures/Point.o"
+	@echo "... Structures/Point.i"
+	@echo "... Structures/Point.s"
 	@echo "... Utils/Utils.o"
 	@echo "... Utils/Utils.i"
 	@echo "... Utils/Utils.s"

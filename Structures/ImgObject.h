@@ -5,15 +5,23 @@
 #ifndef VSB_ANOI_IMGOBJECT_H
 #define VSB_ANOI_IMGOBJECT_H
 
+#include <opencv2/opencv.hpp>
 #include "iostream"
+#include "Point.h"
 
 class ImgObject {
+private:
+    cv::Vec3b* Color = NULL;
 public:
     std::string name;
     int Index;
 
-    double MomentsX;
-    double MomentsY;
+
+    Point<double> Moments;
+    Point<int> Center;
+    cv::Vec3b GetColor();
+    void SetColor(cv::Vec3b* aColor);
+    ~ImgObject();
 };
 
 

@@ -86,16 +86,34 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/Indexing.cpp">
+		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/BlobDetector.cpp">
 			<Option target="VSB_ANOI"/>
 		</Unit>
-		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/Indexing.h">
+		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/BlobDetector.h">
 			<Option target="VSB_ANOI"/>
 		</Unit>
 		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/Threshold.cpp">
 			<Option target="VSB_ANOI"/>
 		</Unit>
 		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/Threshold.h">
+			<Option target="VSB_ANOI"/>
+		</Unit>
+		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/ImgObject.cpp">
+			<Option target="VSB_ANOI"/>
+		</Unit>
+		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/ImgObject.h">
+			<Option target="VSB_ANOI"/>
+		</Unit>
+		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/MyException.cpp">
+			<Option target="VSB_ANOI"/>
+		</Unit>
+		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/MyException.h">
+			<Option target="VSB_ANOI"/>
+		</Unit>
+		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/Point.cpp">
+			<Option target="VSB_ANOI"/>
+		</Unit>
+		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/Point.h">
 			<Option target="VSB_ANOI"/>
 		</Unit>
 		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Utils/Utils.cpp">

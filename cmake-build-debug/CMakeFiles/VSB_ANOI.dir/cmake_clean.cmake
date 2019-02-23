@@ -2,7 +2,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/VSB_ANOI.dir/main.cpp.o"
   "CMakeFiles/VSB_ANOI.dir/Utils/Utils.cpp.o"
   "CMakeFiles/VSB_ANOI.dir/Imaging/Threshold.cpp.o"
-  "CMakeFiles/VSB_ANOI.dir/Imaging/Indexing.cpp.o"
+  "CMakeFiles/VSB_ANOI.dir/Imaging/BlobDetector.cpp.o"
+  "CMakeFiles/VSB_ANOI.dir/Structures/ImgObject.cpp.o"
+  "CMakeFiles/VSB_ANOI.dir/Structures/Point.cpp.o"
+  "CMakeFiles/VSB_ANOI.dir/Structures/MyException.cpp.o"
   "VSB_ANOI.pdb"
   "VSB_ANOI"
 )

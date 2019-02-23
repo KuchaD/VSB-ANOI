@@ -4,37 +4,44 @@
 
 #include <opencv2/core/hal/interface.h>
 #include <opencv2/core/mat.hpp>
-#include "Indexing.h"
-#include "Indexing.h"
+#include "BlobDetector.h"
+#include "BlobDetector.h"
 #include "../Utils/Utils.h"
-#include "ImgObject.h"
+#include "../Structures/ImgObject.h"
+#include "../Structures/MyException.h"
 
-Indexing::Indexing() {}
-Indexing::Indexing(cv::Mat & src)
+BlobDetector::BlobDetector() {}
+BlobDetector::BlobDetector(cv::Mat & src)
 {
-    mIndexImage = cv::Mat::zeros(src.rows, src.cols, CV_8UC3);
+    mIndexImage = cv::Mat::zeros(src.rows, src.cols, CV_8UC1);
     mVisitedPoint = cv::Mat::zeros(src.rows, src.cols, CV_8UC1);
 
 
     this->mSrc = src;
+    this->Counter = 0;
+
+}
+
+void BlobDetector::Indexing() {
     this->Counter = 1;
     Utils Utils;
 
-    for (int y = 0; y < src.rows; y++)
+    for (int y = 0; y < mSrc.rows; y++)
     {
-        for (int x = 0; x < src.cols; x++)
+        for (int x = 0; x < mSrc.cols; x++)
         {
             auto Change = Apply(x, y);
             if(Change) {
-                Colour = Utils.RandomColor();
                 this->Counter++;
             }
         }
     }
 
+    Objects = new std::vector<ImgObject>();
+    std::cout << "Found "<< Counter-1 << " objects" << "\n";
 }
 
-bool Indexing::Apply(int x,int y)
+bool BlobDetector::Apply(int x,int y)
 {
     if (y >= mSrc.rows  || x >=  mSrc.cols || y < 0  || x < 0)
         return false;
@@ -66,15 +73,11 @@ bool Indexing::Apply(int x,int y)
 }
 
 
-Indexing::~Indexing()
-{
-}
+cv::Mat BlobDetector::GetIndexImage() { return mIndexImage; }
 
-cv::Mat Indexing::GetIndexImage() { return mIndexImage; }
+cv::Mat BlobDetector::GetVisitedImage() { return mVisitedPoint; }
 
-cv::Mat Indexing::GetVisitedImage() { return mVisitedPoint; }
-
-double Indexing::Moments(int p,int q, int Index) {
+double BlobDetector::Moments(int p,int q, int Index) {
 
         double lSum = 0;
         for (int y = 0; y < mIndexImage.rows; y++)
@@ -82,7 +85,7 @@ double Indexing::Moments(int p,int q, int Index) {
             for (int x = 0; x < mIndexImage.cols; x++)
             {
                 if(Index == mIndexImage.at<uchar>(y,x))
-                    lSum += pow(x,p) * pow(y,q) ; //mSrc.at<uchar>(y,x);
+                    lSum += pow(x,p) * pow(y,q) * mSrc.at<uchar>(y,x);
             }
         }
 
@@ -91,18 +94,64 @@ double Indexing::Moments(int p,int q, int Index) {
 
 }
 
-void Indexing::CalculateMoments()
+void BlobDetector::CalculateMoments()
 {
+    if(Objects == NULL) {
+        throw MyException(" \"[Error] - Objects in image is not define \n");
+    }
+
+    if(Counter == 0)
+    {
+        std::cout << "[Error] No Detections Objects in the Image.(First use Indexing)"<< "\n";
+        return;
+    }
+
     for(int i=1;i < Counter;i++)
     {
-        ImgObject lObj;
+        ImgObject lObj ;
 
         lObj.Index = i+1;
-        lObj.MomentsX = Moments(1,0,i)/Moments(0,0,i);
-        lObj.MomentsY = Moments(0,1,i)/Moments(0,0,i);
+        double M00 = Moments(0,0,i);
+        lObj.Moments.X= Moments(1,0,i)/M00;
+        lObj.Moments.Y= Moments(0,1,i)/M00;
 
-        Objects.push_back(lObj);
-        std::cout <<  i <<" | "<<"X: " << lObj.MomentsX << " Y: " << lObj.MomentsY << "\n";
-        std::cout.flush();
+        Objects->push_back(lObj);
+        std::cout <<  i <<" | "<<"X: " << lObj.Moments.X << " Y: " << lObj.Moments.Y << "\n";
+
     }
+    std::cout.flush();
 }
+
+BlobDetector::~BlobDetector() {
+    Objects = NULL;
+    delete Objects;
+}
+
+void BlobDetector::ShowInformationImage(cv::Mat &Dest) {
+    if(Objects == NULL)
+        throw MyException(" \"[Error] - Objects in image is not define \n");
+
+
+
+    Dest = cv::Mat::zeros(mIndexImage.rows, mIndexImage.cols, CV_8UC3);
+    for (int y = 0; y < mIndexImage.rows; y++)
+    {
+        for (int x = 0; x < mIndexImage.cols; x++)
+        {
+            auto Value = mIndexImage.at<uchar>(y,x);
+
+            if(mIndexImage.at<uchar>(y,x) != 0)
+            {
+                auto Color = Objects->at(Value-1).GetColor();
+                Dest.at<cv::Vec3b>(y,x) = Color;
+            }
+
+        }
+    }
+
+
+}
+
+
+
+

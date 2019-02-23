@@ -4,8 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/Indexing.cpp" "/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles/VSB_ANOI.dir/Imaging/Indexing.cpp.o"
+  "/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/BlobDetector.cpp" "/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles/VSB_ANOI.dir/Imaging/BlobDetector.cpp.o"
   "/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/Threshold.cpp" "/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles/VSB_ANOI.dir/Imaging/Threshold.cpp.o"
+  "/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/ImgObject.cpp" "/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles/VSB_ANOI.dir/Structures/ImgObject.cpp.o"
+  "/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/MyException.cpp" "/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles/VSB_ANOI.dir/Structures/MyException.cpp.o"
+  "/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/Point.cpp" "/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles/VSB_ANOI.dir/Structures/Point.cpp.o"
   "/home/davelinux/Dokumenty/GIT/VSB-ANOI/Utils/Utils.cpp" "/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles/VSB_ANOI.dir/Utils/Utils.cpp.o"
   "/home/davelinux/Dokumenty/GIT/VSB-ANOI/main.cpp" "/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles/VSB_ANOI.dir/main.cpp.o"
   )

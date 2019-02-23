@@ -8,6 +8,7 @@
 
 #include <opencv2/core/matx.hpp>
 
+
 class Utils
 {
 public:
@@ -15,7 +16,5 @@ public:
     static cv::Vec3b RandomColor();
     ~Utils();
 };
-
-
 
 #endif //VSB_ANOI_UTILS_H

@@ -1,24 +1,44 @@
 #include <iostream>
 #include "opencv2/opencv.hpp"
 #include "Imaging/Threshold.h"
-#include "Imaging/Indexing.h"
+#include "Imaging/BlobDetector.h"
+#include "Utils/Utils.h"
+#include "Structures/MyException.h"
 
 int main() {
-    cv::Mat src_8uc1_img;
-    src_8uc1_img = cv::imread("../images/train.png", cv::IMREAD_GRAYSCALE); // load color image from file system to Mat variable, this will be loaded using 8 bits (uchar)
+    try {
+        cv::Mat src_8uc1_img;
+        src_8uc1_img = cv::imread("../images/train.png",
+                                  cv::IMREAD_GRAYSCALE); // load color image from file system to Mat variable, this will be loaded using 8 bits (uchar)
 
-    if (src_8uc1_img.empty()) {
-        printf("Unable to read input file (%s, %d).", __FILE__, __LINE__);
+        if (src_8uc1_img.empty()) {
+            printf("Unable to read input file (%s, %d).", __FILE__, __LINE__);
+        }
+
+
+        //cv 1
+        cv::imshow("Train", src_8uc1_img);
+        Threshold lTH = Threshold(127);
+
+        cv::Mat dest_8uc1_img;
+        lTH.Apply(src_8uc1_img, dest_8uc1_img);
+
+        //cv::imshow("Train_thres", dest_8uc1_img);
+
+        BlobDetector lBlobDetect = BlobDetector(dest_8uc1_img);
+        //cv::imshow("BlobDetector", lBlobDetect.GetIndexImage());
+        lBlobDetect.Indexing();
+
+        //cv 2
+        lBlobDetect.CalculateMoments();
+        cv::Mat info_img;
+        lBlobDetect.ShowInformationImage(info_img);
+        cv::imshow("Show Info Image", info_img);
+
+    }catch(MyException e)
+    {
+        std::cout << "EXCEPTION: " << e.what();
     }
-
-    cv::imshow( "Train", src_8uc1_img );
-    Threshold lTH = Threshold(127);
-    cv::Mat dest_8uc1_img;
-    lTH.Apply(src_8uc1_img,dest_8uc1_img);
-    cv::imshow("Train_thres", dest_8uc1_img);
-    Indexing lIx = Indexing(dest_8uc1_img);
-    cv::imshow("Indexing", lIx.GetIndexImage());
-
     //cv::Mat gray_8uc1_img; // declare variable to hold grayscale version of img variable, gray levels wil be represented using 8 bits (uchar)
     //cv::Mat gray_32fc1_img; // declare variable to hold grayscale version of img variable, gray levels wil be represented using 32 bits (float)
 

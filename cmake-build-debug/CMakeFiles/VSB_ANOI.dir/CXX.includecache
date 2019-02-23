@@ -6,11 +6,33 @@
 
 #IncludeRegexTransform: 
 
-/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/Indexing.h
-Indexing.h
-/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/Indexing.h
+/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/BlobDetector.h
+BlobDetector.h
+/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/BlobDetector.h
+../Structures/ImgObject.h
+/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/ImgObject.h
 
 /home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/Threshold.h
+
+/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/ImgObject.h
+opencv2/opencv.hpp
+-
+iostream
+/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/iostream
+Point.h
+/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/Point.h
+
+/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/MyException.h
+exception
+-
+iostream
+/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/iostream
+
+/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/Point.h
+
+/home/davelinux/Dokumenty/GIT/VSB-ANOI/Utils/Utils.h
+opencv2/core/matx.hpp
+-
 
 /home/davelinux/Dokumenty/GIT/VSB-ANOI/main.cpp
 iostream
@@ -19,8 +41,12 @@ opencv2/opencv.hpp
 /home/davelinux/Dokumenty/GIT/VSB-ANOI/opencv2/opencv.hpp
 Imaging/Threshold.h
 /home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/Threshold.h
-Imaging/Indexing.h
-/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/Indexing.h
+Imaging/BlobDetector.h
+/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/BlobDetector.h
+Utils/Utils.h
+/home/davelinux/Dokumenty/GIT/VSB-ANOI/Utils/Utils.h
+Structures/MyException.h
+/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/MyException.h
 
 /usr/local/include/opencv4/opencv2/calib3d.hpp
 opencv2/core.hpp
