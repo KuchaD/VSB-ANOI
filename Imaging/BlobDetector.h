@@ -6,6 +6,7 @@
 #define VSB_ANOI_INDEXING_H
 
 #include "Indexing.h"
+#include "ImgObject.h"
 class Indexing
 {
 private:
@@ -14,13 +15,16 @@ private:
     cv::Mat mSrc;
     cv::Vec3b Colour;
     int Counter = 0;
+    std::vector<ImgObject> Objects;
 public:
     Indexing();
     cv::Mat GetIndexImage();
     cv::Mat GetVisitedImage();
 
     Indexing(cv::Mat &src);
-    void Apply(int x, int y);
+    bool Apply(int x, int y);
+    double Moments(int p,int q,int Index);
+    void CalculateMoments();
     ~Indexing();
 };
 
