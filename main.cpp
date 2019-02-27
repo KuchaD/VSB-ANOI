@@ -31,8 +31,12 @@ int main() {
 
         //cv 2
         lBlobDetect.CalculateMoments();
+
         cv::Mat info_img;
         lBlobDetect.ShowInformationImage(info_img);
+
+        lBlobDetect.ShowInfo();
+        cv::namedWindow("how Info Image", cv::WINDOW_NORMAL);
         cv::imshow("Show Info Image", info_img);
 
     }catch(MyException e)

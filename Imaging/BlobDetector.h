@@ -26,8 +26,13 @@ public:
     bool Apply(int x, int y);
     double Moments(int p,int q,int Index);
     void CalculateMoments();
-
+    void CalculateArea();
+    double CalculteMomentsWithCenterOfMass(int p,int q,int i,Point<int> CenterOfMass );
+    double Perimetr(int i);
+    double CalF1(int Perimeter,int Area);
+    double CalF2(int u11,int u20,int u02);
     void ShowInformationImage(cv::Mat &Dest);
+    void ShowInfo();
 
     ~BlobDetector();
 };

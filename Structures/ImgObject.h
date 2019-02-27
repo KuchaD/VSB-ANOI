@@ -17,10 +17,20 @@ public:
     int Index;
 
 
-    Point<double> Moments;
-    Point<int> Center;
+    double M00;
+    double M10;
+    double M01;
+
+    Point<int> CenterOfMass;
+    int Perimetr;
+    int Area;
+    double F1;
+    double F2;
+    double umin;
+    double umax;
     cv::Vec3b GetColor();
     void SetColor(cv::Vec3b* aColor);
+    void PrintToConsole();
     ~ImgObject();
 };
 

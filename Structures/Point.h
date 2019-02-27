@@ -12,6 +12,12 @@ public:
 
     }
 
+    Point<T>(T x,T y)
+            {
+        X = x;
+        Y = y;
+            }
+
     T X;
     T Y;
 };
