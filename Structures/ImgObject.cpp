@@ -25,6 +25,9 @@ void ImgObject::SetColor(cv::Vec3b* aColor) {
 ImgObject::~ImgObject() {
     Color = NULL;
     delete(Color);
+
+    ObjectClass = NULL;
+    delete(ObjectClass );
 }
 
 void ImgObject::PrintToConsole() {

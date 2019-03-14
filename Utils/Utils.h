@@ -14,6 +14,7 @@ class Utils
 public:
     Utils();
     static cv::Vec3b RandomColor();
+    static cv::Mat RotateImage(const cv::Mat &source, const double angle);
     ~Utils();
 };
 

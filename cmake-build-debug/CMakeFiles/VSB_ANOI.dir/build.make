@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/davelinux/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/61/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/davelinux/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/61/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/davelinux/Dokumenty/GIT/VSB-ANOI
+CMAKE_SOURCE_DIR = /home/daveliinux/GIT/VSB-ANOI
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug
+CMAKE_BINARY_DIR = /home/daveliinux/GIT/VSB-ANOI/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/VSB_ANOI.dir/depend.make
@@ -59,94 +59,133 @@ include CMakeFiles/VSB_ANOI.dir/flags.make
 
 CMakeFiles/VSB_ANOI.dir/main.cpp.o: CMakeFiles/VSB_ANOI.dir/flags.make
 CMakeFiles/VSB_ANOI.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/VSB_ANOI.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VSB_ANOI.dir/main.cpp.o -c /home/davelinux/Dokumenty/GIT/VSB-ANOI/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/VSB_ANOI.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VSB_ANOI.dir/main.cpp.o -c /home/daveliinux/GIT/VSB-ANOI/main.cpp
 
 CMakeFiles/VSB_ANOI.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VSB_ANOI.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davelinux/Dokumenty/GIT/VSB-ANOI/main.cpp > CMakeFiles/VSB_ANOI.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/daveliinux/GIT/VSB-ANOI/main.cpp > CMakeFiles/VSB_ANOI.dir/main.cpp.i
 
 CMakeFiles/VSB_ANOI.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VSB_ANOI.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davelinux/Dokumenty/GIT/VSB-ANOI/main.cpp -o CMakeFiles/VSB_ANOI.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/daveliinux/GIT/VSB-ANOI/main.cpp -o CMakeFiles/VSB_ANOI.dir/main.cpp.s
 
 CMakeFiles/VSB_ANOI.dir/Utils/Utils.cpp.o: CMakeFiles/VSB_ANOI.dir/flags.make
 CMakeFiles/VSB_ANOI.dir/Utils/Utils.cpp.o: ../Utils/Utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/VSB_ANOI.dir/Utils/Utils.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VSB_ANOI.dir/Utils/Utils.cpp.o -c /home/davelinux/Dokumenty/GIT/VSB-ANOI/Utils/Utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/VSB_ANOI.dir/Utils/Utils.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VSB_ANOI.dir/Utils/Utils.cpp.o -c /home/daveliinux/GIT/VSB-ANOI/Utils/Utils.cpp
 
 CMakeFiles/VSB_ANOI.dir/Utils/Utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VSB_ANOI.dir/Utils/Utils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davelinux/Dokumenty/GIT/VSB-ANOI/Utils/Utils.cpp > CMakeFiles/VSB_ANOI.dir/Utils/Utils.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/daveliinux/GIT/VSB-ANOI/Utils/Utils.cpp > CMakeFiles/VSB_ANOI.dir/Utils/Utils.cpp.i
 
 CMakeFiles/VSB_ANOI.dir/Utils/Utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VSB_ANOI.dir/Utils/Utils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davelinux/Dokumenty/GIT/VSB-ANOI/Utils/Utils.cpp -o CMakeFiles/VSB_ANOI.dir/Utils/Utils.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/daveliinux/GIT/VSB-ANOI/Utils/Utils.cpp -o CMakeFiles/VSB_ANOI.dir/Utils/Utils.cpp.s
 
 CMakeFiles/VSB_ANOI.dir/Imaging/Threshold.cpp.o: CMakeFiles/VSB_ANOI.dir/flags.make
 CMakeFiles/VSB_ANOI.dir/Imaging/Threshold.cpp.o: ../Imaging/Threshold.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/VSB_ANOI.dir/Imaging/Threshold.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VSB_ANOI.dir/Imaging/Threshold.cpp.o -c /home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/Threshold.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/VSB_ANOI.dir/Imaging/Threshold.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VSB_ANOI.dir/Imaging/Threshold.cpp.o -c /home/daveliinux/GIT/VSB-ANOI/Imaging/Threshold.cpp
 
 CMakeFiles/VSB_ANOI.dir/Imaging/Threshold.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VSB_ANOI.dir/Imaging/Threshold.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/Threshold.cpp > CMakeFiles/VSB_ANOI.dir/Imaging/Threshold.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/daveliinux/GIT/VSB-ANOI/Imaging/Threshold.cpp > CMakeFiles/VSB_ANOI.dir/Imaging/Threshold.cpp.i
 
 CMakeFiles/VSB_ANOI.dir/Imaging/Threshold.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VSB_ANOI.dir/Imaging/Threshold.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/Threshold.cpp -o CMakeFiles/VSB_ANOI.dir/Imaging/Threshold.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/daveliinux/GIT/VSB-ANOI/Imaging/Threshold.cpp -o CMakeFiles/VSB_ANOI.dir/Imaging/Threshold.cpp.s
 
 CMakeFiles/VSB_ANOI.dir/Imaging/BlobDetector.cpp.o: CMakeFiles/VSB_ANOI.dir/flags.make
 CMakeFiles/VSB_ANOI.dir/Imaging/BlobDetector.cpp.o: ../Imaging/BlobDetector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/VSB_ANOI.dir/Imaging/BlobDetector.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VSB_ANOI.dir/Imaging/BlobDetector.cpp.o -c /home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/BlobDetector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/VSB_ANOI.dir/Imaging/BlobDetector.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VSB_ANOI.dir/Imaging/BlobDetector.cpp.o -c /home/daveliinux/GIT/VSB-ANOI/Imaging/BlobDetector.cpp
 
 CMakeFiles/VSB_ANOI.dir/Imaging/BlobDetector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VSB_ANOI.dir/Imaging/BlobDetector.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/BlobDetector.cpp > CMakeFiles/VSB_ANOI.dir/Imaging/BlobDetector.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/daveliinux/GIT/VSB-ANOI/Imaging/BlobDetector.cpp > CMakeFiles/VSB_ANOI.dir/Imaging/BlobDetector.cpp.i
 
 CMakeFiles/VSB_ANOI.dir/Imaging/BlobDetector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VSB_ANOI.dir/Imaging/BlobDetector.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/BlobDetector.cpp -o CMakeFiles/VSB_ANOI.dir/Imaging/BlobDetector.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/daveliinux/GIT/VSB-ANOI/Imaging/BlobDetector.cpp -o CMakeFiles/VSB_ANOI.dir/Imaging/BlobDetector.cpp.s
 
 CMakeFiles/VSB_ANOI.dir/Structures/ImgObject.cpp.o: CMakeFiles/VSB_ANOI.dir/flags.make
 CMakeFiles/VSB_ANOI.dir/Structures/ImgObject.cpp.o: ../Structures/ImgObject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/VSB_ANOI.dir/Structures/ImgObject.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VSB_ANOI.dir/Structures/ImgObject.cpp.o -c /home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/ImgObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/VSB_ANOI.dir/Structures/ImgObject.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VSB_ANOI.dir/Structures/ImgObject.cpp.o -c /home/daveliinux/GIT/VSB-ANOI/Structures/ImgObject.cpp
 
 CMakeFiles/VSB_ANOI.dir/Structures/ImgObject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VSB_ANOI.dir/Structures/ImgObject.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/ImgObject.cpp > CMakeFiles/VSB_ANOI.dir/Structures/ImgObject.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/daveliinux/GIT/VSB-ANOI/Structures/ImgObject.cpp > CMakeFiles/VSB_ANOI.dir/Structures/ImgObject.cpp.i
 
 CMakeFiles/VSB_ANOI.dir/Structures/ImgObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VSB_ANOI.dir/Structures/ImgObject.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/ImgObject.cpp -o CMakeFiles/VSB_ANOI.dir/Structures/ImgObject.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/daveliinux/GIT/VSB-ANOI/Structures/ImgObject.cpp -o CMakeFiles/VSB_ANOI.dir/Structures/ImgObject.cpp.s
 
 CMakeFiles/VSB_ANOI.dir/Structures/Point.cpp.o: CMakeFiles/VSB_ANOI.dir/flags.make
 CMakeFiles/VSB_ANOI.dir/Structures/Point.cpp.o: ../Structures/Point.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/VSB_ANOI.dir/Structures/Point.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VSB_ANOI.dir/Structures/Point.cpp.o -c /home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/Point.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/VSB_ANOI.dir/Structures/Point.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VSB_ANOI.dir/Structures/Point.cpp.o -c /home/daveliinux/GIT/VSB-ANOI/Structures/Point.cpp
 
 CMakeFiles/VSB_ANOI.dir/Structures/Point.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VSB_ANOI.dir/Structures/Point.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/Point.cpp > CMakeFiles/VSB_ANOI.dir/Structures/Point.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/daveliinux/GIT/VSB-ANOI/Structures/Point.cpp > CMakeFiles/VSB_ANOI.dir/Structures/Point.cpp.i
 
 CMakeFiles/VSB_ANOI.dir/Structures/Point.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VSB_ANOI.dir/Structures/Point.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/Point.cpp -o CMakeFiles/VSB_ANOI.dir/Structures/Point.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/daveliinux/GIT/VSB-ANOI/Structures/Point.cpp -o CMakeFiles/VSB_ANOI.dir/Structures/Point.cpp.s
 
 CMakeFiles/VSB_ANOI.dir/Structures/MyException.cpp.o: CMakeFiles/VSB_ANOI.dir/flags.make
 CMakeFiles/VSB_ANOI.dir/Structures/MyException.cpp.o: ../Structures/MyException.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/VSB_ANOI.dir/Structures/MyException.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VSB_ANOI.dir/Structures/MyException.cpp.o -c /home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/MyException.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/VSB_ANOI.dir/Structures/MyException.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VSB_ANOI.dir/Structures/MyException.cpp.o -c /home/daveliinux/GIT/VSB-ANOI/Structures/MyException.cpp
 
 CMakeFiles/VSB_ANOI.dir/Structures/MyException.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VSB_ANOI.dir/Structures/MyException.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/MyException.cpp > CMakeFiles/VSB_ANOI.dir/Structures/MyException.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/daveliinux/GIT/VSB-ANOI/Structures/MyException.cpp > CMakeFiles/VSB_ANOI.dir/Structures/MyException.cpp.i
 
 CMakeFiles/VSB_ANOI.dir/Structures/MyException.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VSB_ANOI.dir/Structures/MyException.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/MyException.cpp -o CMakeFiles/VSB_ANOI.dir/Structures/MyException.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/daveliinux/GIT/VSB-ANOI/Structures/MyException.cpp -o CMakeFiles/VSB_ANOI.dir/Structures/MyException.cpp.s
+
+CMakeFiles/VSB_ANOI.dir/Imaging/Classfier.cpp.o: CMakeFiles/VSB_ANOI.dir/flags.make
+CMakeFiles/VSB_ANOI.dir/Imaging/Classfier.cpp.o: ../Imaging/Classfier.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/VSB_ANOI.dir/Imaging/Classfier.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VSB_ANOI.dir/Imaging/Classfier.cpp.o -c /home/daveliinux/GIT/VSB-ANOI/Imaging/Classfier.cpp
+
+CMakeFiles/VSB_ANOI.dir/Imaging/Classfier.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VSB_ANOI.dir/Imaging/Classfier.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/daveliinux/GIT/VSB-ANOI/Imaging/Classfier.cpp > CMakeFiles/VSB_ANOI.dir/Imaging/Classfier.cpp.i
+
+CMakeFiles/VSB_ANOI.dir/Imaging/Classfier.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VSB_ANOI.dir/Imaging/Classfier.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/daveliinux/GIT/VSB-ANOI/Imaging/Classfier.cpp -o CMakeFiles/VSB_ANOI.dir/Imaging/Classfier.cpp.s
+
+CMakeFiles/VSB_ANOI.dir/Imaging/Ethanol.cpp.o: CMakeFiles/VSB_ANOI.dir/flags.make
+CMakeFiles/VSB_ANOI.dir/Imaging/Ethanol.cpp.o: ../Imaging/Ethanol.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/VSB_ANOI.dir/Imaging/Ethanol.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VSB_ANOI.dir/Imaging/Ethanol.cpp.o -c /home/daveliinux/GIT/VSB-ANOI/Imaging/Ethanol.cpp
+
+CMakeFiles/VSB_ANOI.dir/Imaging/Ethanol.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VSB_ANOI.dir/Imaging/Ethanol.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/daveliinux/GIT/VSB-ANOI/Imaging/Ethanol.cpp > CMakeFiles/VSB_ANOI.dir/Imaging/Ethanol.cpp.i
+
+CMakeFiles/VSB_ANOI.dir/Imaging/Ethanol.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VSB_ANOI.dir/Imaging/Ethanol.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/daveliinux/GIT/VSB-ANOI/Imaging/Ethanol.cpp -o CMakeFiles/VSB_ANOI.dir/Imaging/Ethanol.cpp.s
+
+CMakeFiles/VSB_ANOI.dir/Structures/ObjectTyp.cpp.o: CMakeFiles/VSB_ANOI.dir/flags.make
+CMakeFiles/VSB_ANOI.dir/Structures/ObjectTyp.cpp.o: ../Structures/ObjectTyp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/VSB_ANOI.dir/Structures/ObjectTyp.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VSB_ANOI.dir/Structures/ObjectTyp.cpp.o -c /home/daveliinux/GIT/VSB-ANOI/Structures/ObjectTyp.cpp
+
+CMakeFiles/VSB_ANOI.dir/Structures/ObjectTyp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VSB_ANOI.dir/Structures/ObjectTyp.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/daveliinux/GIT/VSB-ANOI/Structures/ObjectTyp.cpp > CMakeFiles/VSB_ANOI.dir/Structures/ObjectTyp.cpp.i
+
+CMakeFiles/VSB_ANOI.dir/Structures/ObjectTyp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VSB_ANOI.dir/Structures/ObjectTyp.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/daveliinux/GIT/VSB-ANOI/Structures/ObjectTyp.cpp -o CMakeFiles/VSB_ANOI.dir/Structures/ObjectTyp.cpp.s
 
 # Object files for target VSB_ANOI
 VSB_ANOI_OBJECTS = \
@@ -156,7 +195,10 @@ VSB_ANOI_OBJECTS = \
 "CMakeFiles/VSB_ANOI.dir/Imaging/BlobDetector.cpp.o" \
 "CMakeFiles/VSB_ANOI.dir/Structures/ImgObject.cpp.o" \
 "CMakeFiles/VSB_ANOI.dir/Structures/Point.cpp.o" \
-"CMakeFiles/VSB_ANOI.dir/Structures/MyException.cpp.o"
+"CMakeFiles/VSB_ANOI.dir/Structures/MyException.cpp.o" \
+"CMakeFiles/VSB_ANOI.dir/Imaging/Classfier.cpp.o" \
+"CMakeFiles/VSB_ANOI.dir/Imaging/Ethanol.cpp.o" \
+"CMakeFiles/VSB_ANOI.dir/Structures/ObjectTyp.cpp.o"
 
 # External object files for target VSB_ANOI
 VSB_ANOI_EXTERNAL_OBJECTS =
@@ -168,56 +210,26 @@ VSB_ANOI: CMakeFiles/VSB_ANOI.dir/Imaging/BlobDetector.cpp.o
 VSB_ANOI: CMakeFiles/VSB_ANOI.dir/Structures/ImgObject.cpp.o
 VSB_ANOI: CMakeFiles/VSB_ANOI.dir/Structures/Point.cpp.o
 VSB_ANOI: CMakeFiles/VSB_ANOI.dir/Structures/MyException.cpp.o
+VSB_ANOI: CMakeFiles/VSB_ANOI.dir/Imaging/Classfier.cpp.o
+VSB_ANOI: CMakeFiles/VSB_ANOI.dir/Imaging/Ethanol.cpp.o
+VSB_ANOI: CMakeFiles/VSB_ANOI.dir/Structures/ObjectTyp.cpp.o
 VSB_ANOI: CMakeFiles/VSB_ANOI.dir/build.make
-VSB_ANOI: /usr/local/lib/libopencv_gapi.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_stitching.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_aruco.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_bgsegm.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_bioinspired.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_ccalib.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_dnn_objdetect.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_dpm.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_face.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_freetype.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_fuzzy.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_hfs.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_img_hash.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_line_descriptor.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_quality.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_reg.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_rgbd.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_saliency.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_stereo.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_structured_light.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_superres.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_surface_matching.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_tracking.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_videostab.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_xfeatures2d.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_xobjdetect.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_xphoto.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_shape.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_datasets.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_plot.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_text.so.4.0.1
 VSB_ANOI: /usr/local/lib/libopencv_dnn.so.4.0.1
 VSB_ANOI: /usr/local/lib/libopencv_ml.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_phase_unwrapping.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_optflow.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_ximgproc.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_video.so.4.0.1
 VSB_ANOI: /usr/local/lib/libopencv_objdetect.so.4.0.1
+VSB_ANOI: /usr/local/lib/libopencv_photo.so.4.0.1
+VSB_ANOI: /usr/local/lib/libopencv_stitching.so.4.0.1
+VSB_ANOI: /usr/local/lib/libopencv_video.so.4.0.1
 VSB_ANOI: /usr/local/lib/libopencv_calib3d.so.4.0.1
 VSB_ANOI: /usr/local/lib/libopencv_features2d.so.4.0.1
 VSB_ANOI: /usr/local/lib/libopencv_flann.so.4.0.1
 VSB_ANOI: /usr/local/lib/libopencv_highgui.so.4.0.1
 VSB_ANOI: /usr/local/lib/libopencv_videoio.so.4.0.1
 VSB_ANOI: /usr/local/lib/libopencv_imgcodecs.so.4.0.1
-VSB_ANOI: /usr/local/lib/libopencv_photo.so.4.0.1
 VSB_ANOI: /usr/local/lib/libopencv_imgproc.so.4.0.1
 VSB_ANOI: /usr/local/lib/libopencv_core.so.4.0.1
 VSB_ANOI: CMakeFiles/VSB_ANOI.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable VSB_ANOI"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable VSB_ANOI"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/VSB_ANOI.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -230,6 +242,6 @@ CMakeFiles/VSB_ANOI.dir/clean:
 .PHONY : CMakeFiles/VSB_ANOI.dir/clean
 
 CMakeFiles/VSB_ANOI.dir/depend:
-	cd /home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/davelinux/Dokumenty/GIT/VSB-ANOI /home/davelinux/Dokumenty/GIT/VSB-ANOI /home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug /home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug /home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles/VSB_ANOI.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/daveliinux/GIT/VSB-ANOI/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/daveliinux/GIT/VSB-ANOI /home/daveliinux/GIT/VSB-ANOI /home/daveliinux/GIT/VSB-ANOI/cmake-build-debug /home/daveliinux/GIT/VSB-ANOI/cmake-build-debug /home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles/VSB_ANOI.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/VSB_ANOI.dir/depend
 

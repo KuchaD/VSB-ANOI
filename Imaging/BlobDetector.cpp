@@ -129,11 +129,16 @@ void BlobDetector::CalculateMoments()
         lObj.Perimetr = Perimetr(i);
         lObj.F1 = CalF1(lObj.Perimetr,lObj.Area);
         lObj.F2 = CalF2(u11,u20,u02);
+        lObj.F3 = ComputeAngleF3(i);
 
         Objects->push_back(lObj);
         std::cout <<  i <<" | "<<"X: " << lObj.CenterOfMass.X << " Y: " << lObj.CenterOfMass.Y << " P " << lObj.Perimetr << " F1 "<< lObj.F1 << " F2 " << lObj.F2 <<  "\n";
 
-    }
+
+
+
+
+        }
     std::cout.flush();
 }
 
@@ -267,6 +272,54 @@ void BlobDetector::ShowInfo() {
 
     }
 
+double BlobDetector::ComputeAngleF3(int Index) {
+    int N_min = 0, S_min = mIndexImage.rows + 1, E_min = mIndexImage.cols + 1, W_min = 0;
+    int N_max = 1, S_max = 1, E_max = 1, W_max = 1;
+
+    cv::Mat highlited = cv::Mat::zeros(mIndexImage.rows, mIndexImage.cols, CV_8UC1);;
+
+    for (int y = 0; y < mIndexImage.rows; y++) {
+        for (int x = 0; x < mIndexImage.cols; x++) {
+            if (mIndexImage.at<uchar>(y, x) == Index) {
+                highlited.at<uchar>(y, x) = 255;
+            }
+        }
+    }
+
+    for (int angle = 0; angle <= 90; angle = angle + 5) {
+        cv::Mat rotated = Utils::RotateImage(highlited, angle);
+        int N_temp = mIndexImage.rows + 1, S_temp = 0, E_temp = 0, W_temp = mIndexImage.cols + 1;
+
+        for (int y = 0; y < rotated.rows; y++) {
+            for (int x = 0; x < rotated.cols; x++) {
+                if (rotated.at<uchar>(y, x) != 0) {
+                    if (N_temp > y) N_temp = y;
+                    if (S_temp < y) S_temp = y;
+                    if (E_temp < x) E_temp = x;
+                    if (W_temp > x) W_temp = x;
+                }
+            }
+        }
+
+
+        if (((E_temp - W_temp) * (S_temp - N_temp)) < ((E_min - W_min) * (S_min - N_min))) {
+            E_min = E_temp;
+            W_min = W_temp;
+            S_min = S_temp;
+            N_min = N_temp;
+        }
+
+        if (((E_temp - W_temp) * (S_temp - N_temp)) > ((E_max - W_max) * (S_max - N_max))) {
+            E_max = E_temp;
+            W_max = W_temp;
+            S_max = S_temp;
+            N_max = N_temp;
+        }
+    }
+
+    return (double) ((E_max - W_max) * (S_max - N_max)) / ((E_min - W_min) * (S_min - N_min));
+
+}
 
 
 

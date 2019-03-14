@@ -8,14 +8,16 @@
 #include <opencv2/opencv.hpp>
 #include "iostream"
 #include "Point.h"
+#include "ObjectTyp.h"
 
 class ImgObject {
 private:
     cv::Vec3b* Color = NULL;
 public:
+    ImgObject(){Color = NULL,ObjectClass = NULL;}
     std::string name;
     int Index;
-
+    ObjectTyp* ObjectClass;
 
     double M00;
     double M10;
@@ -26,6 +28,7 @@ public:
     int Area;
     double F1;
     double F2;
+    double F3;
     double umin;
     double umax;
     cv::Vec3b GetColor();

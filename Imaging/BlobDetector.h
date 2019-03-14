@@ -33,7 +33,10 @@ public:
     double CalF2(int u11,int u20,int u02);
     void ShowInformationImage(cv::Mat &Dest);
     void ShowInfo();
+    std::vector<ImgObject>  *GetObjects(){ return  Objects;}
+    double ComputeAngleF3(int Index);
 
+    cv::Mat getIndexImage(){ return  mIndexImage;}
     ~BlobDetector();
 };
 

@@ -6,23 +6,35 @@
 
 #IncludeRegexTransform: 
 
-/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/ImgObject.cpp
-ImgObject.h
-/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/ImgObject.h
-../Utils/Utils.h
-/home/davelinux/Dokumenty/GIT/VSB-ANOI/Utils/Utils.h
-
-/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/ImgObject.h
+/home/daveliinux/GIT/VSB-ANOI/Structures/ImgObject.h
 opencv2/opencv.hpp
 -
 iostream
-/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/iostream
+/home/daveliinux/GIT/VSB-ANOI/Structures/iostream
 Point.h
-/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/Point.h
+/home/daveliinux/GIT/VSB-ANOI/Structures/Point.h
+ObjectTyp.h
+/home/daveliinux/GIT/VSB-ANOI/Structures/ObjectTyp.h
 
-/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/Point.h
+/home/daveliinux/GIT/VSB-ANOI/Structures/ObjectTyp.h
+opencv2/opencv.hpp
+/home/daveliinux/GIT/VSB-ANOI/Structures/opencv2/opencv.hpp
+iostream
+-
 
-/home/davelinux/Dokumenty/GIT/VSB-ANOI/Utils/Utils.h
+/home/daveliinux/GIT/VSB-ANOI/Structures/Point.h
+
+/home/daveliinux/GIT/VSB-ANOI/Utils/Utils.cpp
+Utils.h
+/home/daveliinux/GIT/VSB-ANOI/Utils/Utils.h
+math.h
+-
+opencv2/core/mat.hpp
+-
+../Structures/ImgObject.h
+/home/daveliinux/GIT/VSB-ANOI/Structures/ImgObject.h
+
+/home/daveliinux/GIT/VSB-ANOI/Utils/Utils.h
 opencv2/core/matx.hpp
 -
 

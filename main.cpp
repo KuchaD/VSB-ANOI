@@ -4,6 +4,7 @@
 #include "Imaging/BlobDetector.h"
 #include "Utils/Utils.h"
 #include "Structures/MyException.h"
+#include "Imaging/Classfier.h"
 
 int main() {
     try {
@@ -35,9 +36,76 @@ int main() {
         cv::Mat info_img;
         lBlobDetect.ShowInformationImage(info_img);
 
-        lBlobDetect.ShowInfo();
-        cv::namedWindow("how Info Image", cv::WINDOW_NORMAL);
+        cv::namedWindow("Show Info Image", cv::WINDOW_NORMAL);
         cv::imshow("Show Info Image", info_img);
+
+        //cv3 Ethanols
+        auto lObjects = lBlobDetect.GetObjects();
+        Classfier lClassfier = Classfier();
+
+        std::vector<ImgObject> lTrainSet;
+        std::string name[] = {"Ctverec", "Hvezda", "Obdelnik","Kruh"};
+        cv::Vec3b colors[] = { cv::Vec3b(255, 0, 0), cv::Vec3b(0, 255, 0), cv::Vec3b(0, 0, 255), cv::Vec3b(0, 255, 255) };
+
+        int j = 0;
+
+        for(int i = 0; i < lObjects->size();i++){
+
+            lTrainSet.push_back(lObjects->at(i));
+
+            if( (i+1) % 4 == 0)
+            {
+                lClassfier.AddClass(lTrainSet, name[j], colors[j]);
+                j++;
+
+                lTrainSet.clear();
+            }
+
+
+        }
+
+        for (auto  etalon : lClassfier.getClass()) {
+            std::cout << "x =" << etalon.getX() << " y=" << etalon.getY() << " " << etalon.getName() << "\n";
+        }
+
+        std::cout.flush();
+
+
+
+        // KLASIFIKACE
+
+        cv::Mat srcTest_8uc1_img;
+        srcTest_8uc1_img = cv::imread("../images/test02.png",
+                                  cv::IMREAD_GRAYSCALE); // load color image from file system to Mat variable, this will be loaded using 8 bits (uchar)
+
+        if (srcTest_8uc1_img.empty()) {
+            printf("Unable to read input file (%s, %d).", __FILE__, __LINE__);
+        }
+
+
+        Threshold lTHr = Threshold(127);
+
+        cv::Mat destTest_8uc1_img;
+        lTH.Apply(srcTest_8uc1_img, destTest_8uc1_img);
+
+        BlobDetector lBlobDetectTest = BlobDetector(destTest_8uc1_img);
+        lBlobDetectTest.Indexing();
+
+        //cv 2
+        lBlobDetectTest.CalculateMoments();
+        lBlobDetectTest.ShowInfo();
+
+        cv::Mat info_img2;
+        auto lObjectsTest = lBlobDetectTest.GetObjects();
+
+        for(int i=0;i < lObjectsTest->size();i++){
+            lClassfier.Classification(lObjectsTest->at(i));
+        }
+
+        lClassfier.ShowInfo(info_img2,lBlobDetectTest.GetObjects(),lBlobDetectTest.getIndexImage());
+
+        cv::namedWindow("Show Info Image2", cv::WINDOW_NORMAL);
+        cv::imshow("Show Info Image2", info_img2);
 
     }catch(MyException e)
     {

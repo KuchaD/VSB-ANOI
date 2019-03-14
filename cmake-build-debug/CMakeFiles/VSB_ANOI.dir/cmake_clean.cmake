@@ -6,6 +6,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/VSB_ANOI.dir/Structures/ImgObject.cpp.o"
   "CMakeFiles/VSB_ANOI.dir/Structures/Point.cpp.o"
   "CMakeFiles/VSB_ANOI.dir/Structures/MyException.cpp.o"
+  "CMakeFiles/VSB_ANOI.dir/Imaging/Classfier.cpp.o"
+  "CMakeFiles/VSB_ANOI.dir/Imaging/Ethanol.cpp.o"
+  "CMakeFiles/VSB_ANOI.dir/Structures/ObjectTyp.cpp.o"
   "VSB_ANOI.pdb"
   "VSB_ANOI"
 )

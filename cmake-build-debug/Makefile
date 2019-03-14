@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/davelinux/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/61/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/davelinux/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/61/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/davelinux/Dokumenty/GIT/VSB-ANOI
+CMAKE_SOURCE_DIR = /home/daveliinux/GIT/VSB-ANOI
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug
+CMAKE_BINARY_DIR = /home/daveliinux/GIT/VSB-ANOI/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/davelinux/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/61/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/davelinux/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/61/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles /home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles /home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -149,6 +149,60 @@ Imaging/BlobDetector.s: Imaging/BlobDetector.cpp.s
 Imaging/BlobDetector.cpp.s:
 	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Imaging/BlobDetector.cpp.s
 .PHONY : Imaging/BlobDetector.cpp.s
+
+Imaging/Classfier.o: Imaging/Classfier.cpp.o
+
+.PHONY : Imaging/Classfier.o
+
+# target to build an object file
+Imaging/Classfier.cpp.o:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Imaging/Classfier.cpp.o
+.PHONY : Imaging/Classfier.cpp.o
+
+Imaging/Classfier.i: Imaging/Classfier.cpp.i
+
+.PHONY : Imaging/Classfier.i
+
+# target to preprocess a source file
+Imaging/Classfier.cpp.i:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Imaging/Classfier.cpp.i
+.PHONY : Imaging/Classfier.cpp.i
+
+Imaging/Classfier.s: Imaging/Classfier.cpp.s
+
+.PHONY : Imaging/Classfier.s
+
+# target to generate assembly for a file
+Imaging/Classfier.cpp.s:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Imaging/Classfier.cpp.s
+.PHONY : Imaging/Classfier.cpp.s
+
+Imaging/Ethanol.o: Imaging/Ethanol.cpp.o
+
+.PHONY : Imaging/Ethanol.o
+
+# target to build an object file
+Imaging/Ethanol.cpp.o:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Imaging/Ethanol.cpp.o
+.PHONY : Imaging/Ethanol.cpp.o
+
+Imaging/Ethanol.i: Imaging/Ethanol.cpp.i
+
+.PHONY : Imaging/Ethanol.i
+
+# target to preprocess a source file
+Imaging/Ethanol.cpp.i:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Imaging/Ethanol.cpp.i
+.PHONY : Imaging/Ethanol.cpp.i
+
+Imaging/Ethanol.s: Imaging/Ethanol.cpp.s
+
+.PHONY : Imaging/Ethanol.s
+
+# target to generate assembly for a file
+Imaging/Ethanol.cpp.s:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Imaging/Ethanol.cpp.s
+.PHONY : Imaging/Ethanol.cpp.s
 
 Imaging/Threshold.o: Imaging/Threshold.cpp.o
 
@@ -230,6 +284,33 @@ Structures/MyException.s: Structures/MyException.cpp.s
 Structures/MyException.cpp.s:
 	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Structures/MyException.cpp.s
 .PHONY : Structures/MyException.cpp.s
+
+Structures/ObjectTyp.o: Structures/ObjectTyp.cpp.o
+
+.PHONY : Structures/ObjectTyp.o
+
+# target to build an object file
+Structures/ObjectTyp.cpp.o:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Structures/ObjectTyp.cpp.o
+.PHONY : Structures/ObjectTyp.cpp.o
+
+Structures/ObjectTyp.i: Structures/ObjectTyp.cpp.i
+
+.PHONY : Structures/ObjectTyp.i
+
+# target to preprocess a source file
+Structures/ObjectTyp.cpp.i:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Structures/ObjectTyp.cpp.i
+.PHONY : Structures/ObjectTyp.cpp.i
+
+Structures/ObjectTyp.s: Structures/ObjectTyp.cpp.s
+
+.PHONY : Structures/ObjectTyp.s
+
+# target to generate assembly for a file
+Structures/ObjectTyp.cpp.s:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Structures/ObjectTyp.cpp.s
+.PHONY : Structures/ObjectTyp.cpp.s
 
 Structures/Point.o: Structures/Point.cpp.o
 
@@ -324,6 +405,12 @@ help:
 	@echo "... Imaging/BlobDetector.o"
 	@echo "... Imaging/BlobDetector.i"
 	@echo "... Imaging/BlobDetector.s"
+	@echo "... Imaging/Classfier.o"
+	@echo "... Imaging/Classfier.i"
+	@echo "... Imaging/Classfier.s"
+	@echo "... Imaging/Ethanol.o"
+	@echo "... Imaging/Ethanol.i"
+	@echo "... Imaging/Ethanol.s"
 	@echo "... Imaging/Threshold.o"
 	@echo "... Imaging/Threshold.i"
 	@echo "... Imaging/Threshold.s"
@@ -333,6 +420,9 @@ help:
 	@echo "... Structures/MyException.o"
 	@echo "... Structures/MyException.i"
 	@echo "... Structures/MyException.s"
+	@echo "... Structures/ObjectTyp.o"
+	@echo "... Structures/ObjectTyp.i"
+	@echo "... Structures/ObjectTyp.s"
 	@echo "... Structures/Point.o"
 	@echo "... Structures/Point.i"
 	@echo "... Structures/Point.s"

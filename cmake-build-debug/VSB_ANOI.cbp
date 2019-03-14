@@ -5,140 +5,158 @@
 		<Option title="VSB_ANOI"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\opencv4\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug"/>
+				<Option working_dir="/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug"/>
+				<Option working_dir="/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="VSB_ANOI">
-				<Option output="/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/VSB_ANOI" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug"/>
+				<Option output="/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/VSB_ANOI" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 VSB_ANOI"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 VSB_ANOI"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="VSB_ANOI/fast">
-				<Option output="/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/VSB_ANOI" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug"/>
+				<Option output="/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/VSB_ANOI" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 VSB_ANOI/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 VSB_ANOI/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug"/>
+				<Option working_dir="/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/davelinux/Dokumenty/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/BlobDetector.cpp">
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/Imaging/BlobDetector.cpp">
 			<Option target="VSB_ANOI"/>
 		</Unit>
-		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/BlobDetector.h">
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/Imaging/BlobDetector.h">
 			<Option target="VSB_ANOI"/>
 		</Unit>
-		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/Threshold.cpp">
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/Imaging/Classfier.cpp">
 			<Option target="VSB_ANOI"/>
 		</Unit>
-		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Imaging/Threshold.h">
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/Imaging/Classfier.h">
 			<Option target="VSB_ANOI"/>
 		</Unit>
-		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/ImgObject.cpp">
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/Imaging/Ethanol.cpp">
 			<Option target="VSB_ANOI"/>
 		</Unit>
-		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/ImgObject.h">
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/Imaging/Ethanol.h">
 			<Option target="VSB_ANOI"/>
 		</Unit>
-		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/MyException.cpp">
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/Imaging/Threshold.cpp">
 			<Option target="VSB_ANOI"/>
 		</Unit>
-		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/MyException.h">
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/Imaging/Threshold.h">
 			<Option target="VSB_ANOI"/>
 		</Unit>
-		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/Point.cpp">
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/Structures/ImgObject.cpp">
 			<Option target="VSB_ANOI"/>
 		</Unit>
-		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Structures/Point.h">
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/Structures/ImgObject.h">
 			<Option target="VSB_ANOI"/>
 		</Unit>
-		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Utils/Utils.cpp">
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/Structures/MyException.cpp">
 			<Option target="VSB_ANOI"/>
 		</Unit>
-		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/Utils/Utils.h">
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/Structures/MyException.h">
 			<Option target="VSB_ANOI"/>
 		</Unit>
-		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/main.cpp">
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/Structures/ObjectTyp.cpp">
 			<Option target="VSB_ANOI"/>
 		</Unit>
-		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/CMakeLists.txt">
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/Structures/ObjectTyp.h">
+			<Option target="VSB_ANOI"/>
+		</Unit>
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/Structures/Point.cpp">
+			<Option target="VSB_ANOI"/>
+		</Unit>
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/Structures/Point.h">
+			<Option target="VSB_ANOI"/>
+		</Unit>
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/Utils/Utils.cpp">
+			<Option target="VSB_ANOI"/>
+		</Unit>
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/Utils/Utils.h">
+			<Option target="VSB_ANOI"/>
+		</Unit>
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/main.cpp">
+			<Option target="VSB_ANOI"/>
+		</Unit>
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/../../../../usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
 		</Unit>
-		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/../../../../usr/local/lib/cmake/opencv4/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
 		</Unit>
-		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/../../../../../usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/../../../../usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
 		</Unit>
-		<Unit filename="/home/davelinux/Dokumenty/GIT/VSB-ANOI/../../../../../usr/local/lib/cmake/opencv4/OpenCVModules.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/../../../../usr/local/lib/cmake/opencv4/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
