@@ -7,7 +7,19 @@
 
 
 class Centroid {
+public:
+    double X;
+    double Y;
+    double Z;
 
+    Centroid();
+    Centroid(double X,double Y,double Z)
+    {
+        this->X = X;
+        this->Y = Y;
+        this->Z = Z;
+
+    }
 };
 
 

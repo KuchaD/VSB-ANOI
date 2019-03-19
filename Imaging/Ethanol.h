@@ -15,8 +15,7 @@ class Ethanol {
 public:
     Ethanol(std::string aName,cv::Vec3b aColor);
     Ethanol(){};
-    ~Ethanol();
-    void set(ImgObject object);
+    ~Ethanol();void set(ImgObject object);
     double computeDist(ImgObject & object);
     double getX();
     double getY();

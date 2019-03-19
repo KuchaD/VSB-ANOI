@@ -5,11 +5,12 @@
 #include "Utils/Utils.h"
 #include "Structures/MyException.h"
 #include "Imaging/Classfier.h"
+#include "Imaging/Kmeans.h"
 
 int main() {
     try {
         cv::Mat src_8uc1_img;
-        src_8uc1_img = cv::imread("../images/train.png",
+        src_8uc1_img = cv::imread("../images/train04.png",
                                   cv::IMREAD_GRAYSCALE); // load color image from file system to Mat variable, this will be loaded using 8 bits (uchar)
 
         if (src_8uc1_img.empty()) {
@@ -45,7 +46,7 @@ int main() {
 
         std::vector<ImgObject> lTrainSet;
         std::string name[] = {"Ctverec", "Hvezda", "Obdelnik","Kruh"};
-        cv::Vec3b colors[] = { cv::Vec3b(255, 0, 0), cv::Vec3b(0, 255, 0), cv::Vec3b(0, 0, 255), cv::Vec3b(0, 255, 255) };
+        cv::Vec3b colors[] = { cv::Vec3b(255, 0, 0), cv::Vec3b(0, 255, 0), cv::Vec3b(0, 0, 255), cv::Vec3b(0, 255, 255) ,cv::Vec3b(100, 25, 255) };
 
         int j = 0;
 
@@ -106,6 +107,34 @@ int main() {
 
         cv::namedWindow("Show Info Image2", cv::WINDOW_NORMAL);
         cv::imshow("Show Info Image2", info_img2);
+
+        //K-means
+
+        BlobDetector lBlobDetectTest3 = BlobDetector(destTest_8uc1_img);
+        lBlobDetectTest3.Indexing();
+
+        lBlobDetectTest3.CalculateMoments();
+        lBlobDetectTest3.ShowInfo();
+
+
+        auto lObjectsTest3 = lBlobDetectTest3.GetObjects();
+        Kmeans Kmeans;
+
+        auto l = Kmeans.Cluster(4,lBlobDetect.GetObjects());
+
+        for(int i=0;i < lObjectsTest->size();i++){
+            std::cout << Kmeans.ClassToObject(lObjectsTest3->at(i)) << std::endl;
+            std::cout.flush();
+        }
+
+
+        cv::Mat info_img3;
+        Kmeans.ShowInfo(info_img3,l,lBlobDetect.getIndexImage());
+
+
+
+        cv::namedWindow("Show Info Image3", cv::WINDOW_NORMAL);
+        cv::imshow("Show Info Image3", info_img3);
 
     }catch(MyException e)
     {

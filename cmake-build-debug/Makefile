@@ -204,6 +204,33 @@ Imaging/Ethanol.cpp.s:
 	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Imaging/Ethanol.cpp.s
 .PHONY : Imaging/Ethanol.cpp.s
 
+Imaging/Kmeans.o: Imaging/Kmeans.cpp.o
+
+.PHONY : Imaging/Kmeans.o
+
+# target to build an object file
+Imaging/Kmeans.cpp.o:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Imaging/Kmeans.cpp.o
+.PHONY : Imaging/Kmeans.cpp.o
+
+Imaging/Kmeans.i: Imaging/Kmeans.cpp.i
+
+.PHONY : Imaging/Kmeans.i
+
+# target to preprocess a source file
+Imaging/Kmeans.cpp.i:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Imaging/Kmeans.cpp.i
+.PHONY : Imaging/Kmeans.cpp.i
+
+Imaging/Kmeans.s: Imaging/Kmeans.cpp.s
+
+.PHONY : Imaging/Kmeans.s
+
+# target to generate assembly for a file
+Imaging/Kmeans.cpp.s:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Imaging/Kmeans.cpp.s
+.PHONY : Imaging/Kmeans.cpp.s
+
 Imaging/Threshold.o: Imaging/Threshold.cpp.o
 
 .PHONY : Imaging/Threshold.o
@@ -230,6 +257,33 @@ Imaging/Threshold.s: Imaging/Threshold.cpp.s
 Imaging/Threshold.cpp.s:
 	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Imaging/Threshold.cpp.s
 .PHONY : Imaging/Threshold.cpp.s
+
+Structures/Centroid.o: Structures/Centroid.cpp.o
+
+.PHONY : Structures/Centroid.o
+
+# target to build an object file
+Structures/Centroid.cpp.o:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Structures/Centroid.cpp.o
+.PHONY : Structures/Centroid.cpp.o
+
+Structures/Centroid.i: Structures/Centroid.cpp.i
+
+.PHONY : Structures/Centroid.i
+
+# target to preprocess a source file
+Structures/Centroid.cpp.i:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Structures/Centroid.cpp.i
+.PHONY : Structures/Centroid.cpp.i
+
+Structures/Centroid.s: Structures/Centroid.cpp.s
+
+.PHONY : Structures/Centroid.s
+
+# target to generate assembly for a file
+Structures/Centroid.cpp.s:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/Structures/Centroid.cpp.s
+.PHONY : Structures/Centroid.cpp.s
 
 Structures/ImgObject.o: Structures/ImgObject.cpp.o
 
@@ -411,9 +465,15 @@ help:
 	@echo "... Imaging/Ethanol.o"
 	@echo "... Imaging/Ethanol.i"
 	@echo "... Imaging/Ethanol.s"
+	@echo "... Imaging/Kmeans.o"
+	@echo "... Imaging/Kmeans.i"
+	@echo "... Imaging/Kmeans.s"
 	@echo "... Imaging/Threshold.o"
 	@echo "... Imaging/Threshold.i"
 	@echo "... Imaging/Threshold.s"
+	@echo "... Structures/Centroid.o"
+	@echo "... Structures/Centroid.i"
+	@echo "... Structures/Centroid.s"
 	@echo "... Structures/ImgObject.o"
 	@echo "... Structures/ImgObject.i"
 	@echo "... Structures/ImgObject.s"

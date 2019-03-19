@@ -104,10 +104,22 @@
 		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/Imaging/Ethanol.h">
 			<Option target="VSB_ANOI"/>
 		</Unit>
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/Imaging/Kmeans.cpp">
+			<Option target="VSB_ANOI"/>
+		</Unit>
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/Imaging/Kmeans.h">
+			<Option target="VSB_ANOI"/>
+		</Unit>
 		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/Imaging/Threshold.cpp">
 			<Option target="VSB_ANOI"/>
 		</Unit>
 		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/Imaging/Threshold.h">
+			<Option target="VSB_ANOI"/>
+		</Unit>
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/Structures/Centroid.cpp">
+			<Option target="VSB_ANOI"/>
+		</Unit>
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/Structures/Centroid.h">
 			<Option target="VSB_ANOI"/>
 		</Unit>
 		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/Structures/ImgObject.cpp">

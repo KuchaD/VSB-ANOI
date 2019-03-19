@@ -6,6 +6,30 @@
 
 #IncludeRegexTransform: 
 
+/home/daveliinux/GIT/VSB-ANOI/Imaging/Kmeans.cpp
+Kmeans.h
+/home/daveliinux/GIT/VSB-ANOI/Imaging/Kmeans.h
+../Structures/Point.h
+/home/daveliinux/GIT/VSB-ANOI/Structures/Point.h
+../Structures/MyException.h
+/home/daveliinux/GIT/VSB-ANOI/Structures/MyException.h
+iostream
+-
+random
+-
+list
+-
+
+/home/daveliinux/GIT/VSB-ANOI/Imaging/Kmeans.h
+vector
+-
+../Structures/ImgObject.h
+/home/daveliinux/GIT/VSB-ANOI/Structures/ImgObject.h
+../Structures/Centroid.h
+/home/daveliinux/GIT/VSB-ANOI/Structures/Centroid.h
+
+/home/daveliinux/GIT/VSB-ANOI/Structures/Centroid.h
+
 /home/daveliinux/GIT/VSB-ANOI/Structures/ImgObject.h
 opencv2/opencv.hpp
 -
@@ -16,6 +40,12 @@ Point.h
 ObjectTyp.h
 /home/daveliinux/GIT/VSB-ANOI/Structures/ObjectTyp.h
 
+/home/daveliinux/GIT/VSB-ANOI/Structures/MyException.h
+exception
+-
+iostream
+/home/daveliinux/GIT/VSB-ANOI/Structures/iostream
+
 /home/daveliinux/GIT/VSB-ANOI/Structures/ObjectTyp.h
 opencv2/opencv.hpp
 /home/daveliinux/GIT/VSB-ANOI/Structures/opencv2/opencv.hpp
@@ -23,20 +53,6 @@ iostream
 -
 
 /home/daveliinux/GIT/VSB-ANOI/Structures/Point.h
-
-/home/daveliinux/GIT/VSB-ANOI/Utils/Utils.cpp
-Utils.h
-/home/daveliinux/GIT/VSB-ANOI/Utils/Utils.h
-math.h
--
-opencv2/core/mat.hpp
--
-../Structures/ImgObject.h
-/home/daveliinux/GIT/VSB-ANOI/Structures/ImgObject.h
-
-/home/daveliinux/GIT/VSB-ANOI/Utils/Utils.h
-opencv2/core/matx.hpp
--
 
 /usr/local/include/opencv4/opencv2/calib3d.hpp
 opencv2/core.hpp
