@@ -213,6 +213,45 @@ CMakeFiles/VSB_ANOI.dir/Structures/Centroid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VSB_ANOI.dir/Structures/Centroid.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/daveliinux/GIT/VSB-ANOI/Structures/Centroid.cpp -o CMakeFiles/VSB_ANOI.dir/Structures/Centroid.cpp.s
 
+CMakeFiles/VSB_ANOI.dir/BackPropagation/Neuron.cpp.o: CMakeFiles/VSB_ANOI.dir/flags.make
+CMakeFiles/VSB_ANOI.dir/BackPropagation/Neuron.cpp.o: ../BackPropagation/Neuron.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/VSB_ANOI.dir/BackPropagation/Neuron.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VSB_ANOI.dir/BackPropagation/Neuron.cpp.o -c /home/daveliinux/GIT/VSB-ANOI/BackPropagation/Neuron.cpp
+
+CMakeFiles/VSB_ANOI.dir/BackPropagation/Neuron.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VSB_ANOI.dir/BackPropagation/Neuron.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/daveliinux/GIT/VSB-ANOI/BackPropagation/Neuron.cpp > CMakeFiles/VSB_ANOI.dir/BackPropagation/Neuron.cpp.i
+
+CMakeFiles/VSB_ANOI.dir/BackPropagation/Neuron.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VSB_ANOI.dir/BackPropagation/Neuron.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/daveliinux/GIT/VSB-ANOI/BackPropagation/Neuron.cpp -o CMakeFiles/VSB_ANOI.dir/BackPropagation/Neuron.cpp.s
+
+CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuronLayer.cpp.o: CMakeFiles/VSB_ANOI.dir/flags.make
+CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuronLayer.cpp.o: ../BackPropagation/NeuronLayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuronLayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuronLayer.cpp.o -c /home/daveliinux/GIT/VSB-ANOI/BackPropagation/NeuronLayer.cpp
+
+CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuronLayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuronLayer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/daveliinux/GIT/VSB-ANOI/BackPropagation/NeuronLayer.cpp > CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuronLayer.cpp.i
+
+CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuronLayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuronLayer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/daveliinux/GIT/VSB-ANOI/BackPropagation/NeuronLayer.cpp -o CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuronLayer.cpp.s
+
+CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuralNetwork.cpp.o: CMakeFiles/VSB_ANOI.dir/flags.make
+CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuralNetwork.cpp.o: ../BackPropagation/NeuralNetwork.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuralNetwork.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuralNetwork.cpp.o -c /home/daveliinux/GIT/VSB-ANOI/BackPropagation/NeuralNetwork.cpp
+
+CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuralNetwork.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuralNetwork.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/daveliinux/GIT/VSB-ANOI/BackPropagation/NeuralNetwork.cpp > CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuralNetwork.cpp.i
+
+CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuralNetwork.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuralNetwork.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/daveliinux/GIT/VSB-ANOI/BackPropagation/NeuralNetwork.cpp -o CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuralNetwork.cpp.s
+
 # Object files for target VSB_ANOI
 VSB_ANOI_OBJECTS = \
 "CMakeFiles/VSB_ANOI.dir/main.cpp.o" \
@@ -226,7 +265,10 @@ VSB_ANOI_OBJECTS = \
 "CMakeFiles/VSB_ANOI.dir/Imaging/Ethanol.cpp.o" \
 "CMakeFiles/VSB_ANOI.dir/Structures/ObjectTyp.cpp.o" \
 "CMakeFiles/VSB_ANOI.dir/Imaging/Kmeans.cpp.o" \
-"CMakeFiles/VSB_ANOI.dir/Structures/Centroid.cpp.o"
+"CMakeFiles/VSB_ANOI.dir/Structures/Centroid.cpp.o" \
+"CMakeFiles/VSB_ANOI.dir/BackPropagation/Neuron.cpp.o" \
+"CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuronLayer.cpp.o" \
+"CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuralNetwork.cpp.o"
 
 # External object files for target VSB_ANOI
 VSB_ANOI_EXTERNAL_OBJECTS =
@@ -243,6 +285,9 @@ VSB_ANOI: CMakeFiles/VSB_ANOI.dir/Imaging/Ethanol.cpp.o
 VSB_ANOI: CMakeFiles/VSB_ANOI.dir/Structures/ObjectTyp.cpp.o
 VSB_ANOI: CMakeFiles/VSB_ANOI.dir/Imaging/Kmeans.cpp.o
 VSB_ANOI: CMakeFiles/VSB_ANOI.dir/Structures/Centroid.cpp.o
+VSB_ANOI: CMakeFiles/VSB_ANOI.dir/BackPropagation/Neuron.cpp.o
+VSB_ANOI: CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuronLayer.cpp.o
+VSB_ANOI: CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuralNetwork.cpp.o
 VSB_ANOI: CMakeFiles/VSB_ANOI.dir/build.make
 VSB_ANOI: /usr/local/lib/libopencv_dnn.so.4.0.1
 VSB_ANOI: /usr/local/lib/libopencv_ml.so.4.0.1
@@ -259,7 +304,7 @@ VSB_ANOI: /usr/local/lib/libopencv_imgcodecs.so.4.0.1
 VSB_ANOI: /usr/local/lib/libopencv_imgproc.so.4.0.1
 VSB_ANOI: /usr/local/lib/libopencv_core.so.4.0.1
 VSB_ANOI: CMakeFiles/VSB_ANOI.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable VSB_ANOI"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable VSB_ANOI"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/VSB_ANOI.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

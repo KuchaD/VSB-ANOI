@@ -21,6 +21,7 @@ public:
     std::map<int,std::vector<ImgObject>*> Cluster(int aClusters,std::vector<ImgObject>* aData);
     void ShowInfo(cv::Mat &Dest, std::map<int,std::vector<ImgObject>*> Objects,cv::Mat IndexImage);
     int ClassToObject(ImgObject& aObject);
+    void ShowClassifikation(cv::Mat &Dest, std::vector<ImgObject>* Objects,cv::Mat IndexImage);
 
 };
 

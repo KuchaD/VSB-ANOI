@@ -123,6 +123,87 @@ VSB_ANOI/fast:
 	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/build
 .PHONY : VSB_ANOI/fast
 
+BackPropagation/NeuralNetwork.o: BackPropagation/NeuralNetwork.cpp.o
+
+.PHONY : BackPropagation/NeuralNetwork.o
+
+# target to build an object file
+BackPropagation/NeuralNetwork.cpp.o:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuralNetwork.cpp.o
+.PHONY : BackPropagation/NeuralNetwork.cpp.o
+
+BackPropagation/NeuralNetwork.i: BackPropagation/NeuralNetwork.cpp.i
+
+.PHONY : BackPropagation/NeuralNetwork.i
+
+# target to preprocess a source file
+BackPropagation/NeuralNetwork.cpp.i:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuralNetwork.cpp.i
+.PHONY : BackPropagation/NeuralNetwork.cpp.i
+
+BackPropagation/NeuralNetwork.s: BackPropagation/NeuralNetwork.cpp.s
+
+.PHONY : BackPropagation/NeuralNetwork.s
+
+# target to generate assembly for a file
+BackPropagation/NeuralNetwork.cpp.s:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuralNetwork.cpp.s
+.PHONY : BackPropagation/NeuralNetwork.cpp.s
+
+BackPropagation/Neuron.o: BackPropagation/Neuron.cpp.o
+
+.PHONY : BackPropagation/Neuron.o
+
+# target to build an object file
+BackPropagation/Neuron.cpp.o:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/BackPropagation/Neuron.cpp.o
+.PHONY : BackPropagation/Neuron.cpp.o
+
+BackPropagation/Neuron.i: BackPropagation/Neuron.cpp.i
+
+.PHONY : BackPropagation/Neuron.i
+
+# target to preprocess a source file
+BackPropagation/Neuron.cpp.i:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/BackPropagation/Neuron.cpp.i
+.PHONY : BackPropagation/Neuron.cpp.i
+
+BackPropagation/Neuron.s: BackPropagation/Neuron.cpp.s
+
+.PHONY : BackPropagation/Neuron.s
+
+# target to generate assembly for a file
+BackPropagation/Neuron.cpp.s:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/BackPropagation/Neuron.cpp.s
+.PHONY : BackPropagation/Neuron.cpp.s
+
+BackPropagation/NeuronLayer.o: BackPropagation/NeuronLayer.cpp.o
+
+.PHONY : BackPropagation/NeuronLayer.o
+
+# target to build an object file
+BackPropagation/NeuronLayer.cpp.o:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuronLayer.cpp.o
+.PHONY : BackPropagation/NeuronLayer.cpp.o
+
+BackPropagation/NeuronLayer.i: BackPropagation/NeuronLayer.cpp.i
+
+.PHONY : BackPropagation/NeuronLayer.i
+
+# target to preprocess a source file
+BackPropagation/NeuronLayer.cpp.i:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuronLayer.cpp.i
+.PHONY : BackPropagation/NeuronLayer.cpp.i
+
+BackPropagation/NeuronLayer.s: BackPropagation/NeuronLayer.cpp.s
+
+.PHONY : BackPropagation/NeuronLayer.s
+
+# target to generate assembly for a file
+BackPropagation/NeuronLayer.cpp.s:
+	$(MAKE) -f CMakeFiles/VSB_ANOI.dir/build.make CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuronLayer.cpp.s
+.PHONY : BackPropagation/NeuronLayer.cpp.s
+
 Imaging/BlobDetector.o: Imaging/BlobDetector.cpp.o
 
 .PHONY : Imaging/BlobDetector.o
@@ -456,6 +537,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... VSB_ANOI"
 	@echo "... edit_cache"
+	@echo "... BackPropagation/NeuralNetwork.o"
+	@echo "... BackPropagation/NeuralNetwork.i"
+	@echo "... BackPropagation/NeuralNetwork.s"
+	@echo "... BackPropagation/Neuron.o"
+	@echo "... BackPropagation/Neuron.i"
+	@echo "... BackPropagation/Neuron.s"
+	@echo "... BackPropagation/NeuronLayer.o"
+	@echo "... BackPropagation/NeuronLayer.i"
+	@echo "... BackPropagation/NeuronLayer.s"
 	@echo "... Imaging/BlobDetector.o"
 	@echo "... Imaging/BlobDetector.i"
 	@echo "... Imaging/BlobDetector.s"

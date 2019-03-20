@@ -86,6 +86,24 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/BackPropagation/NeuralNetwork.cpp">
+			<Option target="VSB_ANOI"/>
+		</Unit>
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/BackPropagation/NeuralNetwork.h">
+			<Option target="VSB_ANOI"/>
+		</Unit>
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/BackPropagation/Neuron.cpp">
+			<Option target="VSB_ANOI"/>
+		</Unit>
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/BackPropagation/Neuron.h">
+			<Option target="VSB_ANOI"/>
+		</Unit>
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/BackPropagation/NeuronLayer.cpp">
+			<Option target="VSB_ANOI"/>
+		</Unit>
+		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/BackPropagation/NeuronLayer.h">
+			<Option target="VSB_ANOI"/>
+		</Unit>
 		<Unit filename="/home/daveliinux/GIT/VSB-ANOI/Imaging/BlobDetector.cpp">
 			<Option target="VSB_ANOI"/>
 		</Unit>

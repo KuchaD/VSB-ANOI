@@ -244,3 +244,29 @@ int Kmeans::ClassToObject(ImgObject &aObject) {
 
 
 }
+
+void Kmeans::ShowClassifikation(cv::Mat &Dest, std::vector<ImgObject> *Objects, cv::Mat IndexImage) {
+    cv::Vec3b colors[] = {cv::Vec3b(255, 0, 0), cv::Vec3b(0, 255, 0), cv::Vec3b(0, 0, 255), cv::Vec3b(0, 255, 255),cv::Vec3b(100, 25, 255)};
+    Dest = cv::Mat::zeros(IndexImage.rows, IndexImage.cols, CV_8UC3);
+
+
+            for (int y = 0; y < IndexImage.rows; y++) {
+                for (int x = 0; x < IndexImage.cols; x++) {
+                    auto Value = IndexImage.at<uchar>(y, x);
+
+                    if (IndexImage.at<uchar>(y, x) != 0) {
+
+                            auto Color = colors[ Objects->at(Value - 1).K_meansClass];
+                            Dest.at<cv::Vec3b>(y, x) = Color;
+                        }
+
+
+                    }
+
+                }
+
+            }
+
+
+
+

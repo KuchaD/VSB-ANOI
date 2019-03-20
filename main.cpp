@@ -6,9 +6,13 @@
 #include "Structures/MyException.h"
 #include "Imaging/Classfier.h"
 #include "Imaging/Kmeans.h"
+#include "BackPropagation/NeuralNetwork.h"
+
+void NeuralNetworkCV();
 
 int main() {
     try {
+        /*
         cv::Mat src_8uc1_img;
         src_8uc1_img = cv::imread("../images/train04.png",
                                   cv::IMREAD_GRAYSCALE); // load color image from file system to Mat variable, this will be loaded using 8 bits (uchar)
@@ -76,7 +80,7 @@ int main() {
         // KLASIFIKACE
 
         cv::Mat srcTest_8uc1_img;
-        srcTest_8uc1_img = cv::imread("../images/test02.png",
+        srcTest_8uc1_img = cv::imread("../images/test04.png",
                                   cv::IMREAD_GRAYSCALE); // load color image from file system to Mat variable, this will be loaded using 8 bits (uchar)
 
         if (srcTest_8uc1_img.empty()) {
@@ -122,61 +126,158 @@ int main() {
 
         auto l = Kmeans.Cluster(4,lBlobDetect.GetObjects());
 
-        for(int i=0;i < lObjectsTest->size();i++){
-            std::cout << Kmeans.ClassToObject(lObjectsTest3->at(i)) << std::endl;
+        for(int i=0;i < lObjectsTest3->size();i++){
+            lObjectsTest3->at(i).K_meansClass = Kmeans.ClassToObject(lObjectsTest3->at(i));
+            std::cout <<  lObjectsTest3->at(i).K_meansClass << std::endl;
             std::cout.flush();
         }
 
 
         cv::Mat info_img3;
         Kmeans.ShowInfo(info_img3,l,lBlobDetect.getIndexImage());
-
+        //Kmeans.ShowClassifikation(info_img3,lObjectsTest3,lBlobDetectTest3.getIndexImage());
 
 
         cv::namedWindow("Show Info Image3", cv::WINDOW_NORMAL);
         cv::imshow("Show Info Image3", info_img3);
+         */
 
-    }catch(MyException e)
-    {
+        NeuralNetworkCV();
+
+    }catch(MyException e) {
         std::cout << "EXCEPTION: " << e.what();
     }
-    //cv::Mat gray_8uc1_img; // declare variable to hold grayscale version of img variable, gray levels wil be represented using 8 bits (uchar)
-    //cv::Mat gray_32fc1_img; // declare variable to hold grayscale version of img variable, gray levels wil be represented using 32 bits (float)
-
-    //cv::cvtColor(src_8uc3_img, gray_8uc1_img, CV_BGR2GRAY); // convert input color image to grayscale one, CV_BGR2GRAY specifies direction of conversion
-    //gray_8uc1_img.convertTo(gray_32fc1_img, CV_32FC1, 1.0 / 255.0); // convert grayscale image from 8 bits to 32 bits, resulting values will be in the interval 0.0 - 1.0
-
-    //int x = 10, y = 15; // pixel coordinates
-
-    //uchar p1 = gray_8uc1_img.at<uchar>(y, x); // read grayscale value of a pixel, image represented using 8 bits
-    //float p2 = gray_32fc1_img.at<float>(y, x); // read grayscale value of a pixel, image represented using 32 bits
-    //cv::Vec3b p3 = src_8uc3_img.at<cv::Vec3b>(y, x); // read color value of a pixel, image represented using 8 bits per color channel
-
-    //// print values of pixels
-    //printf("p1 = %d\n", p1);
-    //printf("p2 = %f\n", p2);
-    //printf("p3[ 0 ] = %d, p3[ 1 ] = %d, p3[ 2 ] = %d\n", p3[0], p3[1], p3[2]);
-
-    //gray_8uc1_img.at<uchar>(y, x) = 0; // set pixel value to 0 (black)
-
-    //// draw a rectangle
-    //cv::rectangle(gray_8uc1_img, cv::Point(65, 84), cv::Point(75, 94),
-    //	cv::Scalar(50), CV_FILLED);
-
-    //// declare variable to hold gradient image with dimensions: width= 256 pixels, height= 50 pixels.
-    //// Gray levels wil be represented using 8 bits (uchar)
-    //cv::Mat gradient_8uc1_img(50, 256, CV_8UC1);
-
-    //// For every pixel in image, assign a brightness value according to the x coordinate.
-    //// This wil create a horizontal gradient.
-    //for (int y = 0; y < gradient_8uc1_img.rows; y++) {
-    //	for (int x = 0; x < gradient_8uc1_img.cols; x++) {
-    //		gradient_8uc1_img.at<uchar>(y, x) = x;
-    //	}
-    //}
-
-    // diplay images
-
     cv::waitKey(0); // wait until keypressed
 
 }
+void NeuralNetworkCV() {
+
+    cv::Mat src_8uc1_img;
+    src_8uc1_img = cv::imread("../images/train04.png",
+                              cv::IMREAD_GRAYSCALE); // load color image from file system to Mat variable, this will be loaded using 8 bits (uchar)
+
+    if (src_8uc1_img.empty()) {
+        printf("Unable to read input file (%s, %d).", __FILE__, __LINE__);
+    }
+    Threshold lTH = Threshold(127);
+
+    cv::Mat dest_8uc1_img;
+    lTH.Apply(src_8uc1_img, dest_8uc1_img);
+    BlobDetector lBlobDetect = BlobDetector(dest_8uc1_img);
+    lBlobDetect.Indexing();
+
+    lBlobDetect.CalculateMoments();
+    auto lObjectsTrain = lBlobDetect.GetObjects(); // Train Obj
+    NeuralNetwork nn = NeuralNetwork(3,8,4);
+
+    std::vector<std::vector<double>> training_set;
+    std::vector<std::vector<double>> R;
+    int j = 0;
+
+    for(int i = 0; i < lObjectsTrain->size();i++){
+
+        std::vector<double> lTranObj;
+        lTranObj.push_back(lObjectsTrain->at(i).F1);
+        lTranObj.push_back(lObjectsTrain->at(i).F2);
+        lTranObj.push_back(lObjectsTrain->at(i).F3);
+
+        training_set.push_back(lTranObj);
+
+        std::vector<double> lR;
+        for (int k = 0; k < 4 ; ++k) {
+            if(k == j)
+                lR.push_back(1);
+            else
+                lR.push_back(0);
+        }
+
+        R.push_back(lR);
+
+        if( (i+1) % 4 == 0)
+        {
+            j++;
+        }
+
+
+
+    }
+
+    for (int i = 0; i < 10000; ++i) {
+        for (int j = 0; j < training_set.size(); ++j) {
+
+
+            auto input = training_set[j];
+            auto output = R[j];
+
+            nn.Train(input, output);
+
+
+        }
+    }
+
+    //Test Train
+    for (int j = 0; j < training_set.size(); ++j) {
+        auto l = nn.feed_forward(training_set[j]);
+
+        std::cout << nn.MaxIndex(l) << std::endl;
+        std::cout.flush();
+    }
+    //Test Data
+
+    cv::Mat srcTest_8uc1_img;
+    srcTest_8uc1_img = cv::imread("../images/test04.png",
+                                  cv::IMREAD_GRAYSCALE); // load color image from file system to Mat variable, this will be loaded using 8 bits (uchar)
+
+    if (srcTest_8uc1_img.empty()) {
+        printf("Unable to read input file (%s, %d).", __FILE__, __LINE__);
+    }
+
+
+    Threshold lTHr = Threshold(127);
+
+    cv::Mat destTest_8uc1_img;
+    lTH.Apply(srcTest_8uc1_img, destTest_8uc1_img);
+
+    BlobDetector lBlobDetectTest = BlobDetector(destTest_8uc1_img);
+    lBlobDetectTest.Indexing();
+
+    //cv 2
+    lBlobDetectTest.CalculateMoments();
+    lBlobDetectTest.ShowInfo();
+
+    cv::Mat info_img2;
+    auto lObjectsTest = lBlobDetectTest.GetObjects();
+
+    std::vector<std::vector<double>> lTest;
+    for(int i = 0; i < lObjectsTest->size();i++){
+
+        std::vector<double> lTranObj;
+        lTranObj.push_back(lObjectsTest->at(i).F1);
+        lTranObj.push_back(lObjectsTest->at(i).F2);
+        lTranObj.push_back(lObjectsTest->at(i).F3);
+
+        lTest.push_back(lTranObj);
+
+
+    }
+    std::cout << " TEST" << std::endl;
+    for (int j = 0; j < lTest.size(); ++j) {
+
+        auto l = nn.MaxIndex(nn.feed_forward(lTest[j]));
+        lObjectsTest->at(j).K_meansClass = l;
+        std::cout << l << std::endl;
+        std::cout.flush();
+    }
+
+    Kmeans Kmeans;
+    Kmeans.ShowClassifikation(info_img2,lObjectsTest,lBlobDetectTest.getIndexImage());
+
+
+    cv::namedWindow("Show Info Image3", cv::WINDOW_NORMAL);
+    cv::imshow("Show Info Image3", info_img2);
+
+
+}
+
+
+

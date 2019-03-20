@@ -4,6 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/daveliinux/GIT/VSB-ANOI/BackPropagation/NeuralNetwork.cpp" "/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuralNetwork.cpp.o"
+  "/home/daveliinux/GIT/VSB-ANOI/BackPropagation/Neuron.cpp" "/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles/VSB_ANOI.dir/BackPropagation/Neuron.cpp.o"
+  "/home/daveliinux/GIT/VSB-ANOI/BackPropagation/NeuronLayer.cpp" "/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuronLayer.cpp.o"
   "/home/daveliinux/GIT/VSB-ANOI/Imaging/BlobDetector.cpp" "/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles/VSB_ANOI.dir/Imaging/BlobDetector.cpp.o"
   "/home/daveliinux/GIT/VSB-ANOI/Imaging/Classfier.cpp" "/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles/VSB_ANOI.dir/Imaging/Classfier.cpp.o"
   "/home/daveliinux/GIT/VSB-ANOI/Imaging/Ethanol.cpp" "/home/daveliinux/GIT/VSB-ANOI/cmake-build-debug/CMakeFiles/VSB_ANOI.dir/Imaging/Ethanol.cpp.o"

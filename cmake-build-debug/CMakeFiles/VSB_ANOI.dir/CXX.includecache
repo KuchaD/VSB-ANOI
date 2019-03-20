@@ -6,19 +6,49 @@
 
 #IncludeRegexTransform: 
 
-/home/daveliinux/GIT/VSB-ANOI/Imaging/Kmeans.cpp
-Kmeans.h
-/home/daveliinux/GIT/VSB-ANOI/Imaging/Kmeans.h
-../Structures/Point.h
-/home/daveliinux/GIT/VSB-ANOI/Structures/Point.h
-../Structures/MyException.h
-/home/daveliinux/GIT/VSB-ANOI/Structures/MyException.h
+/home/daveliinux/GIT/VSB-ANOI/BackPropagation/NeuralNetwork.h
+NeuronLayer.h
+/home/daveliinux/GIT/VSB-ANOI/BackPropagation/NeuronLayer.h
+
+/home/daveliinux/GIT/VSB-ANOI/BackPropagation/Neuron.h
+vector
+/home/daveliinux/GIT/VSB-ANOI/BackPropagation/vector
+
+/home/daveliinux/GIT/VSB-ANOI/BackPropagation/NeuronLayer.h
+vector
+-
+ostream
+-
+Neuron.h
+/home/daveliinux/GIT/VSB-ANOI/BackPropagation/Neuron.h
+
+/home/daveliinux/GIT/VSB-ANOI/Imaging/BlobDetector.h
+BlobDetector.h
+/home/daveliinux/GIT/VSB-ANOI/Imaging/BlobDetector.h
+../Structures/ImgObject.h
+/home/daveliinux/GIT/VSB-ANOI/Structures/ImgObject.h
+
+/home/daveliinux/GIT/VSB-ANOI/Imaging/Classfier.h
+vector
+/home/daveliinux/GIT/VSB-ANOI/Imaging/vector
+Ethanol.h
+/home/daveliinux/GIT/VSB-ANOI/Imaging/Ethanol.h
+../Structures/ImgObject.h
+/home/daveliinux/GIT/VSB-ANOI/Structures/ImgObject.h
 iostream
 -
-random
--
-list
--
+opencv2/opencv.hpp
+/home/daveliinux/GIT/VSB-ANOI/Imaging/opencv2/opencv.hpp
+
+/home/daveliinux/GIT/VSB-ANOI/Imaging/Ethanol.h
+../Structures/ImgObject.h
+/home/daveliinux/GIT/VSB-ANOI/Structures/ImgObject.h
+iostream
+/home/daveliinux/GIT/VSB-ANOI/Imaging/iostream
+vector
+/home/daveliinux/GIT/VSB-ANOI/Imaging/vector
+opencv2/opencv.hpp
+/home/daveliinux/GIT/VSB-ANOI/Imaging/opencv2/opencv.hpp
 
 /home/daveliinux/GIT/VSB-ANOI/Imaging/Kmeans.h
 vector
@@ -27,6 +57,8 @@ vector
 /home/daveliinux/GIT/VSB-ANOI/Structures/ImgObject.h
 ../Structures/Centroid.h
 /home/daveliinux/GIT/VSB-ANOI/Structures/Centroid.h
+
+/home/daveliinux/GIT/VSB-ANOI/Imaging/Threshold.h
 
 /home/daveliinux/GIT/VSB-ANOI/Structures/Centroid.h
 
@@ -53,6 +85,30 @@ iostream
 -
 
 /home/daveliinux/GIT/VSB-ANOI/Structures/Point.h
+
+/home/daveliinux/GIT/VSB-ANOI/Utils/Utils.h
+opencv2/core/matx.hpp
+-
+
+/home/daveliinux/GIT/VSB-ANOI/main.cpp
+iostream
+-
+opencv2/opencv.hpp
+/home/daveliinux/GIT/VSB-ANOI/opencv2/opencv.hpp
+Imaging/Threshold.h
+/home/daveliinux/GIT/VSB-ANOI/Imaging/Threshold.h
+Imaging/BlobDetector.h
+/home/daveliinux/GIT/VSB-ANOI/Imaging/BlobDetector.h
+Utils/Utils.h
+/home/daveliinux/GIT/VSB-ANOI/Utils/Utils.h
+Structures/MyException.h
+/home/daveliinux/GIT/VSB-ANOI/Structures/MyException.h
+Imaging/Classfier.h
+/home/daveliinux/GIT/VSB-ANOI/Imaging/Classfier.h
+Imaging/Kmeans.h
+/home/daveliinux/GIT/VSB-ANOI/Imaging/Kmeans.h
+BackPropagation/NeuralNetwork.h
+/home/daveliinux/GIT/VSB-ANOI/BackPropagation/NeuralNetwork.h
 
 /usr/local/include/opencv4/opencv2/calib3d.hpp
 opencv2/core.hpp

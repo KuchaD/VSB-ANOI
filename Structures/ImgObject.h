@@ -31,6 +31,7 @@ public:
     double F3;
     double umin;
     double umax;
+    int K_meansClass;
     cv::Vec3b GetColor();
     void SetColor(cv::Vec3b* aColor);
     void PrintToConsole();

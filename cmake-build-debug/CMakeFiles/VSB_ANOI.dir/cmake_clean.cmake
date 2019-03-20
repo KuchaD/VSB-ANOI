@@ -11,6 +11,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/VSB_ANOI.dir/Structures/ObjectTyp.cpp.o"
   "CMakeFiles/VSB_ANOI.dir/Imaging/Kmeans.cpp.o"
   "CMakeFiles/VSB_ANOI.dir/Structures/Centroid.cpp.o"
+  "CMakeFiles/VSB_ANOI.dir/BackPropagation/Neuron.cpp.o"
+  "CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuronLayer.cpp.o"
+  "CMakeFiles/VSB_ANOI.dir/BackPropagation/NeuralNetwork.cpp.o"
   "VSB_ANOI.pdb"
   "VSB_ANOI"
 )
